@@ -1,0 +1,198 @@
+AGENT-SPAWNING PATTERN EVOLUTION - RESEARCH SUMMARY
+=====================================================
+
+## TIMELINE OF DEVELOPMENT
+
+### PHASE 0: Single Agent (2025-10)
+- All work handled by main Opus agent
+- Issue: Context exhaustion when processing multiple files sequentially
+- No parallelism, no delegation
+
+### PHASE 1: Early Subagents (2025-12-09 to 2025-12-14)
+Key Commits:
+- 0f166e74 (2025-12-09): security-scanner.md - First specialized agent
+- cf76b44f (Late 2025-12): context-finder.md - Data gathering agent
+- 11fe9ad2 (2025-12-14): Documentation of subagent roles
+
+Pattern: Haiku for specialized tasks, Opus for decisions
+Limitation: No coordinated delegation pattern yet
+
+### PHASE 2: Context Efficiency Revolution (2025-12-13 to 2025-12-14)
+Key Commits:
+- 0cca557c (2025-12-13): "learn: subagent delegation pattern"
+  Main insight: Prevent context exhaustion via parallel delegation
+  
+Files:
+- /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_subagent-delegation-pattern.md
+- /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-14_parallel-subagent-vault-pattern.md
+
+Pattern Established:
+1. Main agent allocates work → Subagents (parallel)
+2. Subagents deliver summary only (not full context)
+3. Main agent reviews/decides
+4. If unsure, main reads files (selective, not exhaustive)
+
+Example: 433 files generated in 190 seconds (parallel APIs)
+Anti-pattern: Main sequential read/edit of 36+ files (causes context exhaustion)
+
+### PHASE 3: Multi-Worktree Synchronization (2025-12-31 to 2026-01-04)
+Key Commits:
+- 0022f438 (2025-12-31): Per-agent focus files (focus-agent-N.md)
+- e023cc5c (2026-01-04): gitignore fixes for multi-agent conflicts
+- 838004da (2026-01-04): Track .agents/ MAW toolkit in git
+- 00bcd32c (2025-12-31): maw-toolkit status.sh dashboard
+- acd343c1 (2026-01-04): maw peek shows context % per agent
+
+Infrastructure:
+- Per-agent focus tracking (ψ/inbox/focus-agent-main.md, etc.)
+- MAW (Multi-Agent Workflow) toolkit for orchestration
+- Conflict prevention via isolated tracking files
+- Agent status dashboard showing context usage
+
+### PHASE 4: Pure MCP AI-to-AI Coordination (2026-01-03 to 2026-01-04)
+Breakthrough Sequence:
+1. 2bdfd338 (2026-01-03): Session UUID discovery + forum answers
+2. 080135c6 (2026-01-04): Multi-agent forum communication + handoff
+3. 15ea4bab (2026-01-04): Oracle forum multi-agent coordination test
+4. d9828359 (2026-01-04): ralph loop + forum integration (14 messages)
+5. 72f7d9e5 (2026-01-04): Pure MCP AI-to-AI Communication Breakthrough
+6. f898f5fe (2026-01-04): Snapshot: MCP coordination proven
+7. 57940d04 (2026-01-04): Retrospective: "pure MCP AI-to-AI coordination breakthrough"
+
+Key Insight from 57940d04 commit message:
+"BREAKTHROUGH: Agents coordinate via Oracle Forum using only MCP tools.
+No MAW, no tmux, no external orchestration needed.
+Tested: 2 Ralph Loop sessions (7+13 iterations, 22 thread messages)
+Exit via keyword detection in forum thread works perfectly.
+The door was never locked. We just needed to try the handle."
+
+Mechanism:
+- Agents use MCP (Model Context Protocol) to communicate natively
+- Oracle Forum as coordination hub
+- Agent → Post question/data → Other agents → Read response
+- Exit via keyword detection (no need for manual signal)
+- Pure protocol communication, no external storage needed
+
+### PHASE 5: Mature Infrastructure (2026-01-05+)
+Key Commit:
+- 66190a32 (2026-01-05): maw-handbook.md comprehensive guide
+
+Codification of MAW patterns into official documentation
+
+## CURRENT ARCHITECTURE (2026-01-07)
+
+From CLAUDE.md v5.2.0:
+
+Agents Overview:
+- context-finder (Haiku): Search git/issues/retrospectives
+- coder (Opus): Create code files with quality
+- executor (Haiku): Execute bash commands
+- security-scanner (Haiku): Detect secrets
+- repo-auditor (Haiku): Check file sizes
+- marie-kondo (Haiku): File placement
+- archiver (Haiku): Find unused items
+- api-scanner (Haiku): Fetch/analyze APIs
+- new-feature (Haiku): Create plan issues
+- debate (?: UX/design feedback)
+
+Worktree Structure:
+- /main/: Main agent (excludes agents/ in searches)
+- /agents/1,2,3,4,5/: Individual agent worktrees
+
+MAW Commands:
+- maw peek: Check all agents
+- maw sync: Sync all to main
+- maw hey N "task": Send task to agent N
+
+Focus Files:
+- ψ/inbox/focus-agent-main.md (main agent)
+- ψ/inbox/focus-agent-1.md through ψ/inbox/focus-agent-N.md (agents)
+
+Delegation Pattern (REQUIRED):
+1. Main allocates → Subagents (parallel)
+2. Subagents answer briefly (summary)
+3. Main reviews/decides
+4. Main reads files selectively if needed
+
+## KEY FILES FOR REFERENCE
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/CLAUDE.md
+- Official agent instructions, v5.2.0, in migration
+- Navigation to specialized docs (CLAUDE_subagents.md, etc.)
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/.claude/agents/
+- Agent definitions (security-scanner.md, context-finder.md, etc.)
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/.agents/maw.env.sh
+- MAW toolkit initialization
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/.agents/maw-toolkit/
+- MAW commands and tools
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/
+- Pattern discoveries (delegation, parallel processing, subagent usage)
+
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/retrospectives/
+- Session logs documenting breakthrough moments
+
+## CRITICAL LESSONS LEARNED
+
+From CLAUDE.md Subagent Delegation Section:
+---
+**Use subagents for bulk operations to save main agent context.**
+
+| Task | Subagent? | Why |
+|------|-----------|-----|
+| Edit 5+ files | ✅ Yes | Parallel, saves context |
+| Bulk search | ✅ Yes | Haiku cheaper, faster |
+| Single file | ❌ No | Main ทำเองได้ |
+
+**Retrospective Ownership (rrr):**
+Main agent (Opus) MUST write retrospective — needs full context + vulnerability
+
+| Task | Who | Why |
+|------|-----|-----|
+| `git log`, `git diff` | Subagent | Data gathering |
+| AI Diary | **Main** | Needs reflection + vulnerability |
+| Honest Feedback | **Main** | Needs nuance + full context |
+| All writing | **Main** | Quality matters |
+
+Anti-pattern: Subagent writes draft → Main just commits
+Correct: Subagent gathers data → Main writes everything
+---
+
+## TECHNICAL EVOLUTION GRAPH
+
+Single Agent (2025-10)
+        ↓ (context exhaustion)
+Early Subagents (2025-12-09)
+        ↓ (need patterns)
+Delegation Pattern (2025-12-13)
+        ↓ (need peer coordination)
+Parallel Processing (2025-12-14)
+        ↓ (need multi-agent sync)
+Worktree Sync + MAW (2025-12-31)
+        ↓ (need native coordination)
+Pure MCP AI-to-AI (2026-01-04)
+        ↓ (need documentation)
+Mature Infrastructure (2026-01-05+)
+
+## ARCHITECTURAL INSIGHTS
+
+1. **Context as Resource**: Main agent context is finite. Subagents enable parallel work.
+
+2. **Hierarchy vs Peer**: Early: Main → Subagents (hierarchical)
+   Current: Agents → Each other via MCP (peer-to-peer)
+
+3. **Communication Evolution**:
+   - Phase 3: Manual coordination (MAW commands, focus files)
+   - Phase 4: Native protocol coordination (MCP forums)
+
+4. **Exit Patterns**: No need for manual shutdown signals.
+   Keyword detection in agent responses sufficient.
+
+5. **Context % Visibility**: maw peek shows context usage per agent,
+   enabling informed delegation decisions.
+
+6. **Conflict Prevention**: Per-agent focus files eliminate git merge conflicts.
+

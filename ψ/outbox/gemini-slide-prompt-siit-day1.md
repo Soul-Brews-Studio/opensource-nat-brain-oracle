@@ -1,0 +1,1 @@
+Arthur AI Digital Twin, futuristic holographic interface, glowing blue humanoid figure, calendar widgets, chat bubbles, document icons, orbiting agent icons, connection lines, JARVIS style but friendlier, dark space background, white cyan glow, text ARTHUR above --ar 16:9

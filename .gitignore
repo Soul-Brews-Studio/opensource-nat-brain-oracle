@@ -1,0 +1,42 @@
+# Databases
+*.sqlite3
+*.duckdb
+*.db
+*.db-wal
+*.db-shm
+
+# Binary data
+*.bin
+*.wasm
+*.onnx
+*.parquet
+
+# Generated images
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Large exports
+*.csv
+
+# Node
+node_modules/
+dist/
+.chromadb/
+chroma_data/
+
+# Temp directories
+tmp/
+.tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Incubation (cloned repos)
+ψ/incubate/
+ψ/learn/
+
+# Context (session scratch)
+ψ-context/

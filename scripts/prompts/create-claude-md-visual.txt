@@ -1,0 +1,38 @@
+Create a professional, modern illustration for a technical workshop about CLAUDE.md (AI assistant guidelines).
+
+Style: Clean, minimalist, tech-forward with warm human touch
+Colors:
+- Primary: Deep blue (#1e40af) for AI/technology
+- Secondary: Warm orange (#f97316) for collaboration
+- Accent: Mint green (#10b981) for growth
+- Background: Soft cream (#fef3c7)
+
+Composition:
+- Left side: Stylized document icon labeled "CLAUDE.md" with visible text lines suggesting code/instructions
+- Center: Flowing connection lines (like neural pathways or conversation bubbles) showing interaction
+- Right side: Abstract representation of AI assistant (geometric shapes forming a friendly helper, NOT robot)
+- Bottom: Small human figure at desk, collaboratively working with flowing lines connecting to AI
+
+Visual elements:
+- Document has visible sections: "Safety Rules", "Workflows", "Short Codes"
+- Conversation bubbles showing fragments like "rrr", "nnn", "help me create"
+- Soft glow around connection points suggesting active collaboration
+- Clean typography for labels: "Collaborate", "Create", "Improve"
+
+Mood: Collaborative, approachable, professional yet friendly
+Avoid: Robots, generic chatbot icons, overly complex diagrams
+Emphasis: Human-AI partnership, not replacement
+
+Aspect ratio: 16:9 (suitable for presentation slide)
+Resolution: High quality for projection
+
+Text overlay (optional, can be added later):
+"CLAUDE.md: Your AI Team Member's Guidebook"
+
+Target audience: Technical professionals learning to work with AI
+Purpose: Workshop slide header/hero image
+
+Additional notes:
+- Should work well as both full-color and when printed in grayscale
+- Icons should be recognizable even at small sizes
+- Overall feel: "This makes AI collaboration accessible and effective"

@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "6e606b2c1ac873bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "35d4f5f8feefd32e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a8c9816998e3606",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "incubate/repo/github.com/laris-co/00_mz_forwarder/09-logs/archive/2025-04/046-run-999_steps.sh-deployment-script.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "046-run-999_steps.sh-deployment-script"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a9ca00de051b88bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb0d6c6405400610",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d6ef07de11bdafa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2018165cfcef893b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "75996dab9f7dc3bb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 399.5026054382324
+  },
+  "right": {
+    "id": "89164d6f9cc35643",
+    "type": "split",
+    "children": [
+      {
+        "id": "75f34894d57eafa1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7669df1803fb2360",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "6eee25b577f09c2b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "0e1004abcc7876b0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b7ccdf26629cdbc0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "92f5b9c5a2895cc2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "f7035596ecf53626",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "2a8c9816998e3606",
+  "lastOpenFiles": [
+    "memory/learnings/2026-01-07_project-manager-complete-lifecycle.md",
+    "memory/learnings/2026-01-07_slug-format-owner-repo.md",
+    "inbox/daily/2026-01-07.md",
+    "memory/retrospectives/2025-12/10/09.55_morning-agents-philosophy-cleanup.md",
+    "inbox/tracks/2512281031-test-track.md",
+    "inbox/tracks/2512271925-garmin.md",
+    "inbox/tracks/2512280800-ultra-lean.md",
+    "inbox/tracks/2512271333-maw-merge.md",
+    "inbox/tracks/garmin.md",
+    "inbox/tracks/ultra-lean.md",
+    "inbox/tracks/maw-merge.md",
+    "inbox/tracks/INDEX.md",
+    "inbox/tracks/archive",
+    "inbox/tracks",
+    "memory/logs/info/INDEX.md",
+    "memory/logs/info/2025-12-28_09-31_acupuncture-cupping.md",
+    "memory/learnings/workflow/2025-12-28_ultra-lean-claude-md-pattern.md",
+    "memory/retrospectives/2025-12/28/09.24_ultra-lean-planning-jot-command.md",
+    "inbox/jot.md",
+    "inbox/errata.md",
+    "inbox/handoff/2025-12-28_09-10_ultra-lean-migration.md",
+    "memory/learnings/workflow/2025-12-28_smart-hook-command-detection.md",
+    "memory/learnings/workflow",
+    "memory/retrospectives/2025-12/28/08.43_statusline-shortcodes-safety-hook.md",
+    "inbox/handoff/2025-12-28_08-05_maw-lazy-loading.md",
+    "memory/learnings/maw/2025-12-28_never-amend-in-multi-agent.md",
+    "memory/retrospectives/2025-12/28/07.39_maw-amend-divergence-fix.md",
+    "memory/retrospectives/2025-12/28/07.13_oracle-multiverse-vector-learning.md",
+    "memory/retrospectives/2025-12/28",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/collections/test_dense_index.py",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/collections/helpers.py",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/collections/__init__.py",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/restore_job/test_describe.py",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/restore_job/test_list.py",
+    "learn/pinecone/tests/integration_manual/rest_sync/db/control/resources/backup/__init__.py",
+    "learn/pinecone/docs/maintainers/testing-guide.md",
+    "learn/pinecone/docs/maintainers/release-workflow.png",
+    "learn/pinecone/docs/_static/pinecone-logo.svg",
+    "learn/pinecone/docs/favicon-32x32.png",
+    "learn/qdrant/lib/collection/docs/update-sequence.mmd.png",
+    "learn/qdrant/lib/collection/docs/collection-struct.mmd.png",
+    "learn/qdrant/docs/imgs/local-coverage-report.png",
+    "learn/qdrant/docs/imgs/flamegraph-profile.png",
+    "learn/qdrant/docs/imgs/ci-coverage-report.png",
+    "learn/qdrant/docs/imgs/call-graph-profile.png",
+    "learn/qdrant/lib/gridstore/storage-concepts.svg",
+    "incubate/repo/github.com/laris-co/claude-code-workshops/vault/Untitled 1.canvas",
+    "incubate/repo/github.com/laris-co/claude-code-workshops/vault/Untitled.canvas",
+    "Untitled 4.canvas",
+    "incubate/repo/github.com/laris-co/headline-analyzer/ψ/Untitled.canvas",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

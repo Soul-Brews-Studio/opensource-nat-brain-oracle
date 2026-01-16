@@ -1,0 +1,100 @@
+# MAW & Build With AI Content Inventory
+Generated: 2025-12-19 10:24
+
+## MAW Learning Files (31 found)
+
+### Core Documentation
+1. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_maw-sync-best-practices.md
+2. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_maw-git-worktree-patterns.md
+3. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-14_maw-control-guide.md
+4. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-comprehensive-guide.md
+
+### Setup & Patterns
+5. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-setup-patterns.md
+6. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-setup-mistakes.md
+7. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-copy-order-pattern.md
+8. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-start-control.md
+
+### Specific Features & Learnings
+9. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_maw-peek-table-format.md
+10. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_maw-branching-decisions.md
+11. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_maw-wip-branch-pattern.md
+12. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_peek-before-sync.md
+
+### Broader Context
+13. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_multi-agent-free-will.md
+14. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-journey-index.md
+15. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_maw-index.md
+16. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-13_reunion-pattern.md
+17. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_10-agent-swarm-pattern.md
+18. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_agent-incubation-workflow.md
+19. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_agent-communication-patterns.md
+
+### MAW Subdirectory
+20. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/maw/maw-trace-2025-12-13.md
+21. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/maw/MAW_ANALYSIS.md
+
+### Tangential (mention worktree/multi-agent)
+22. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_direnv-exec-pattern.md
+23. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_esphome-oracle-deep-dive-lessons.md
+24. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_template-evolution-analysis.md
+25. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_slug-registry-design.md
+26. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-17_learning-pattern-subagent-docs.md
+27. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-15_oracle-inheritance-for-incubation.md
+28. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/INDEX.md
+29. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-nazt-github-profile.md
+30. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-github-repos-inventory.md
+31. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/memory/learnings/2025-12-complete-repo-map.md
+
+## CLAUDE Files with MAW Content
+1. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/CLAUDE.md
+2. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/CLAUDE_subagents.md
+3. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/learn/repo/github.com/nazt/weyermann-malt-productpage/ψ-docs/maw/CLAUDE-CODE-EXTENSIBILITY.md
+4. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/learn/repo/github.com/nazt/weyermann-malt-productpage/CLAUDE_subagents.md
+
+## Blog Drafts (22 found)
+
+### MAW-Related Articles
+1. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/09-maw-multi-agent-workflow.md
+2. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/10-maw-usage-guide.md
+
+### AI Collaboration & Philosophy
+3. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/02-oracle-philosophy.md
+4. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/06-human-ai-collaboration-workflow.md
+5. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/11-agent-communication-signals.md
+6. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/12-feeding-philosophy-to-memory.md
+
+### Claude Code & Architecture
+7. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/05-claude-code-features.md
+8. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/08-claude-code-command-inheritance.md
+
+### System Design
+9. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/01-psi-structure.md
+10. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/03-local-ai-pitch.md
+11. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/04-research-strategy.md
+12. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/07-jump-friendly-kanban.md
+
+### Recent Reflections (2025-12-17 onwards)
+13. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-15_github-actions-claude-async-chat.md
+14. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-17_ai-assisted-development-esphome-evolution.md
+15. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-17_oracle-vs-constitution-evolution.md
+16. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-18_iterative-subagent-verification.md
+17. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-18_what-ai-taught-me-about-myself.md
+18. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-18_53-minutes-of-ai-trust.md
+19. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-18_53-minutes-of-ai-trust-FINAL.md
+20. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-19_wave-joins-the-ai-chat.md
+21. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/2025-12-19_ten-days-ai-perspective.md
+
+### Archive
+22. /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/drafts/_archive-psi-proposal.md
+
+## Build With AI Mentions
+- Found in: activity.log (referenced but no dedicated blog post yet)
+- Context: Phrase appears in recent session entries but no dedicated "Build With AI" article found
+- Last mention: 2025-12-19 10:24
+
+## Key Stats
+- MAW Learning Docs: 31 files
+- Blog Drafts: 22 files
+- Months of Development: Dec 13-19, 2025 (7 days)
+- Agent Infrastructure: 10-agent swarm pattern documented

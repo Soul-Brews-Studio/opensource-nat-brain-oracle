@@ -1,0 +1,11 @@
+#!/bin/bash
+# Send prompt to Antigravity chat
+# Usage: send-antigravity "your prompt here"
+
+if [ -z "$1" ]; then
+    echo "Usage: send-antigravity \"your prompt\""
+    exit 1
+fi
+
+SCRIPT_DIR="$(dirname "$0")"
+osascript "$SCRIPT_DIR/send-to-antigravity.scpt" "$1"

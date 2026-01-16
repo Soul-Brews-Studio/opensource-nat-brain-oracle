@@ -1,0 +1,47 @@
+# My AI Life Buddy
+
+> Personal AI system configuration
+
+## About Me
+
+[Write 2-3 sentences about yourself, your work, your goals]
+
+## How I Work
+
+- [Your preferred working style]
+- [Your communication preferences]
+- [Your productivity patterns]
+
+## Folder Structure
+
+```
+ψ/
+├── active/     ← Current research
+├── inbox/      ← Communication
+├── writing/    ← Creative work
+├── lab/        ← Experiments
+└── memory/     ← Knowledge base
+```
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| /feel | Log emotions |
+| /fyi | Log information |
+| /jump | Switch topics |
+| rrr | Session retrospective |
+
+## Principles
+
+1. **Nothing is Deleted** — Append only
+2. **Patterns Over Intentions** — Behavior > words
+3. **External Brain** — AI reflects, I decide
+
+## Current Focus
+
+[What you're working on now]
+
+---
+
+*Last updated: [date]*

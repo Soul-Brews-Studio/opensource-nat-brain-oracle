@@ -1,0 +1,1 @@
+Arthur poster showcase: Professional tech presentation with holographic AI figure at center, floating calendar and chat interface elements, bold ARTHUR typography, tagline Your Personal AI Digital Twin, modern blue gradient aesthetic --ar 16:9

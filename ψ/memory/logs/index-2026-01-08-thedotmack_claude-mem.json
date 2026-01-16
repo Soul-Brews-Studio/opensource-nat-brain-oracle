@@ -1,0 +1,139 @@
+{
+  "project": "thedotmack/claude-mem",
+  "source": "https://github.com/thedotmack/claude-mem",
+  "local_path": "/Users/nat/Code/github.com/thedotmack/claude-mem",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/context/agent-sdk-v2-preview.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/context/cursor-hooks-reference.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/context/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/anti-pattern-cleanup-plan.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/public/cursor/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/public/usage/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/public/architecture/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/public/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/VERSION_FIX.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.uk.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.zh.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.hi.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.cs.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.nl.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.fr.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.sv.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.hu.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.it.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.bn.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.es.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.ar.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.tr.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.ro.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.da.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.de.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.he.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.ja.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.pt-br.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.id.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.vi.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.pl.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.ko.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.el.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.ru.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.no.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.fi.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/README.th.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/i18n/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--logging-analysis-and-recommendations.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-531-export-type-duplication.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-532-memory-leak-analysis.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--gemini-agent-failures.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-514-orphaned-sessions-analysis.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-03--observation-saving-failure.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-511-gemini-model-missing.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-02--stuck-observations.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--session-id-refactor-failures.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-517-windows-powershell-analysis.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--issue-557-settings-module-loader-error.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--session-store-failures.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--PR-556-brainstorming-claude-md-distribution.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-02--generator-failure-investigation.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--test-suite-report.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-527-uv-homebrew-analysis.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--issue-544-mem-search-hint-claude-code.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--session-id-validation-failures.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--issue-555-windows-hooks-ipc-false.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-02--observation-duplication-regression.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-06--windows-woes-comprehensive-report.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--logger-coverage-failures.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--issue-545-formattool-json-parse-crash.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-05--issue-543-slash-command-unavailable.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/2026-01-04--issue-520-stuck-messages-analysis.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/reports/CLAUDE.md"
+,
+    "/Users/nat/Code/github.com/thedotmack/claude-mem/docs/SESSION_ID_ARCHITECTURE.md"
+  ]
+}

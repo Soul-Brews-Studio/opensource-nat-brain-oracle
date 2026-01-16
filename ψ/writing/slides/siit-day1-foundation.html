@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Workshop - Day 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&family=Sarabun:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #e6edf3;
+            --accent-cyan: #00d9ff;
+            --accent-green: #00ff9f;
+            --accent-dim: #30363d;
+            --box-bg: #161b22;
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        .reveal {
+            color: var(--text-color);
+            font-family: 'Sarabun', 'Inter', sans-serif;
+        }
+
+        .reveal h1,
+        .reveal h2,Arthur AI Digital Twin, futuristic holographic interface, glowing blue humanoid figure, calendar widgets, chat bubbles, document icons, orbiting agent icons, connection lines, JARVIS style but friendlier, dark space background, white cyan glow, text ARTHUR above --ar 16:9
+        
+        .reveal h3,
+        .reveal h4 {
+            font-family: 'Sarabun', 'Inter', sans-serif;
+            text-transform: none;
+        }
+
+        /* Custom Theme Overrides */
+        .reveal .slides section {
+            text-align: left;
+        }
+
+        .reveal h1 {
+            color: var(--accent-cyan);
+            font-weight: 800;
+        }
+
+        .reveal h2 {
+            color: var(--accent-green);
+        }
+
+        .reveal strong {
+            color: var(--accent-cyan);
+        }
+
+        .reveal code {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+            background: #161b22;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+        }
+
+        .reveal pre {
+            background: #161b22;
+            border: 1px solid #30363d;
+            box-shadow: none;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .reveal pre code {
+            background: transparent;
+            color: #e6edf3;
+        }
+
+        /* Layout Utils */
+        .flex-container {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .flex-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Diagram Styling */
+        .diagram-container {
+            padding: 2rem;
+            background: rgba(22, 27, 34, 0.5);
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .diagram-box {
+            background: var(--box-bg);
+            border: 2px solid var(--accent-cyan);
+            color: var(--text-color);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            text-align: center;
+            min-width: 120px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .diagram-box.agent {
+            border-color: var(--accent-green);
+        }
+
+        .diagram-box.user {
+            border-color: #e6edf3;
+        }
+
+        .diagram-box.sub {
+            border-color: #a371f7;
+            font-size: 0.8em;
+        }
+
+        .arrow-right {
+            color: #8b949e;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .arrow-down {
+            color: #8b949e;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .connection-line {
+            width: 2px;
+            background: #30363d;
+            height: 20px;
+            margin: 0 auto;
+        }
+
+        /* Specific Diagram Layouts */
+        .flow-horizontal {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .flow-vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .branch-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .branch-line-horiz {
+            position: absolute;
+            top: -10px;
+            left: 50px;
+            right: 50px;
+            height: 2px;
+            background: #30363d;
+        }
+
+        .branch-connector {
+            height: 20px;
+            width: 2px;
+            background: #30363d;
+            margin: 0 auto 10px auto;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            border: 1px solid var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        /* Terminal Window for Code */
+        .terminal-window {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            color: #e6edf3;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Table Styling */
+        .reveal table {
+            font-size: 0.8em;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .reveal table th {
+            border-bottom: 2px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .reveal table td {
+            border-bottom: 1px solid #30363d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: Title -->
+            <section data-background-color="#0d1117">
+                <div style="text-align: center; margin-top: 10%;">
+                    <div style="font-size: 5em; margin-bottom: 0.5rem;">🤖</div>
+                    <h1 style="font-size: 3.5em; margin-bottom: 0.2em;">Agentic AI Workshop</h1>
+                    <h3 style="color: var(--accent-green);">Teach AI to Think Like You</h3>
+                    <p style="color: #8b949e; font-size: 1.2em; margin-top: 2em;">ถอดตัวตนใส่ AI สั่งงานแบบรู้ใจ</p>
+
+                    <div
+                        style="margin-top: 3em; border-top: 1px solid #30363d; padding-top: 1em; font-size: 0.8em; color: #8b949e;">
+                        <p>Day 1: Foundation + Agent Crafting<br>
+                            Nat Weerawan · SIIT · Dec 2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: The Problem -->
+            <section>
+                <h2>😤 ปัญหาของ AI ทั่วไป</h2>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <!-- CSS Diagram Replacement -->
+                        <div class="diagram-container">
+                            <div class="flow-horizontal">
+                                <div class="diagram-box user">YOU</div>
+                                <div class="arrow-right">→</div>
+                                <div class="diagram-box">AI</div>
+                            </div>
+                            <div
+                                style="text-align: center; color: #ff7b72; font-size: 0.8em; margin-top: 1rem; border-left: 2px solid #ff7b72; padding-left: 1rem;">
+                                "อธิบายใหม่ทุกครั้ง"<br>Generic Response
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <ul>
+                            <li class="fragment"><strong>ไม่รู้ Context</strong> ของคุณ</li>
+                            <li class="fragment"><strong>ไม่รู้ Style</strong> ที่คุณชอบ</li>
+                            <li class="fragment"><strong>Stateless</strong> ต้องเริ่มใหม่ทุก session</li>
+                            <li class="fragment" style="color: #ff7b72;"><em>"Generic Response for Generic Prompts"</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: The Solution -->
+            <section>
+                <h2>✨ Agentic AI = AI ที่รู้จักคุณ</h2>
+                <div class="flex-container">
+                    <div class="flex-col" style="flex: 1.5;">
+                        <!-- CSS Diagram Replacement -->
+                        <div class="diagram-container">
+                            <div class="flow-horizontal">
+                                <div class="diagram-box user">YOU</div>
+                                <div class="arrow-right">→</div>
+                                <div class="diagram-box agent"
+                                    style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    YOUR AGENT
+                                    <div
+                                        style="background: rgba(255,255,255,0.1); padding: 0.3rem; border-radius: 4px; font-size: 0.6em; border: 1px dashed var(--accent-green);">
+                                        📄 CLAUDE.md<br>(Your DNA)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-row" style="margin-top: 1rem; font-size: 0.8em;">
+                                <div>สั่งสั้นๆ<br>รู้เรื่อง</div>
+                                <div style="color: var(--accent-green);">Personalized<br>Response</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="highlight-box">
+                            <h3>CLAUDE.md</h3>
+                            <p>DNA ของตัวคุณในรูปแบบไฟล์</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Comparison -->
+            <section>
+                <h2>🔄 AI Agent vs Agentic AI</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>AI Agent (ทั่วไป)</th>
+                            <th>Agentic AI (ที่คุณจะสร้าง)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>ทำตามคำสั่ง (Task-based)</td>
+                            <td><strong>คิดเอง ตัดสินใจเอง (Autonomous)</strong></td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>One task</td>
+                            <td><strong>Multi-step workflow</strong></td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Stateless</td>
+                            <td><strong>มี Memory ระยะยาว</strong></td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Generic</td>
+                            <td><strong>รู้จัก Context ของคุณ</strong></td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>คุณสั่งงาน</td>
+                            <td><strong>คุณ Delegate งาน</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="fragment"
+                    style="text-align: center; margin-top: 2em; font-size: 1.5em; color: var(--accent-green);">
+                    "AI ที่ทำงานแทนคุณได้จริง"
+                </p>
+            </section>
+
+            <!-- SLIDE 5: What is Claude Code -->
+            <section>
+                <h2>💻 Claude Code = AI in Terminal</h2>
+                <div class="terminal-window">
+                    <div style="color: #8b949e; margin-bottom: 0.5rem;">~/projects/floodboy</div>
+                    <code class="language-bash" style="background: none; padding: 0;">
+$ claude "สร้าง API endpoint สำหรับ login"
+                    </code>
+                    <div style="margin-top: 1rem; border-left: 2px solid #30363d; padding-left: 1rem;">
+                        <div style="color: var(--accent-green)">✓ Created auth/login.ts</div>
+                        <div style="color: var(--accent-green)">✓ Added validation</div>
+                        <div style="color: var(--accent-green)">✓ Updated routes</div>
+                        <div style="color: var(--accent-cyan)">> Ready to test the endpoint?</div>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div class="fragment">📂 อ่าน/เขียนไฟล์ได้</div>
+                        <div class="fragment">⚡ รัน commands ได้</div>
+                        <div class="fragment">🧠 เข้าใจ codebase</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Setup -->
+            <section>
+                <h2>🛠️ Setup (5 นาที)</h2>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <pre><code class="language-bash">
+# Install
+npm install -g @anthropic-ai/claude-code
+
+# Start
+cd your-project
+claude
+                        </code></pre>
+                        <div class="highlight-box fragment">
+                            <strong>First Command:</strong><br>
+                            > "สวัสดี ช่วยอธิบาย codebase นี้หน่อย"
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <h4>Prerequisites:</h4>
+                        <ul class="task-list">
+                            <li>✅ Node.js 18+</li>
+                            <li>✅ Git</li>
+                            <li>✅ VS Code (optional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: CLAUDE.md DNA -->
+            <section>
+                <h2>🧬 CLAUDE.md = Your DNA</h2>
+                <p>ไฟล์ที่บอก AI ว่า "คุณคือใคร"</p>
+                <div class="diagram-container"
+                    style="align-items: flex-start; font-family: 'JetBrains Mono'; background: #0d1117; border-left: 4px solid var(--accent-green);">
+                    <div style="color: #8b949e;"># My Preferences</div>
+                    <br>
+                    <div style="color: var(--accent-cyan);">## Style</div>
+                    <div>- พูดสั้น ตรงประเด็น</div>
+                    <div>- ใช้ภาษาไทยปนอังกฤษได้</div>
+                    <br>
+                    <div style="color: var(--accent-cyan);">## Rules</div>
+                    <div>- ถามก่อน commit</div>
+                    <div>- อย่าลบไฟล์โดยไม่บอก</div>
+                    <br>
+                    <div style="color: var(--accent-cyan);">## Context</div>
+                    <div>- Tech: Next.js + Supabase</div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Structure -->
+            <section>
+                <h2>📁 CLAUDE.md Structure</h2>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <pre><code class="language-bash">
+project/
+├── CLAUDE.md          Create this! 👈
+├── .claude/
+│   ├── commands/
+│   └── settings.json
+└── src/
+                        </code></pre>
+                    </div>
+                    <div class="flex-col">
+                        <div class="highlight-box">
+                            <h4>Priority Rule</h4>
+                            <p>Project CLAUDE.md</p>
+                            <p style="text-align: center;">▼</p>
+                            <p>Global ~/.claude/CLAUDE.md</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: Hands-on -->
+            <section>
+                <h2>✍️ Hands-on: สร้าง CLAUDE.md</h2>
+                <div style="text-align: center; margin: 2rem 0;">
+                    <h1 style="color: var(--accent-green); font-size: 4em;">15 Minutes</h1>
+                </div>
+                <ol>
+                    <li><code>touch CLAUDE.md</code></li>
+                    <li>Define <strong>WHO</strong> (คุณคือใคร ทำอะไร)</li>
+                    <li>Define <strong>HOW</strong> (ชอบให้ AI ตอบแบบไหน)</li>
+                    <li>Define <strong>RULES</strong> (ข้อห้าม/ข้อบังคับ)</li>
+                </ol>
+            </section>
+
+            <!-- SLIDE 10: Subagents -->
+            <section>
+                <h2>🤖 Subagents</h2>
+                <h4 style="color: #8b949e;">AI มอบหมายงานให้ AI</h4>
+
+                <!-- CSS Diagram Replacement -->
+                <div class="diagram-container">
+                    <div class="diagram-box agent" style="width: 200px;">MAIN AGENT (Opus)</div>
+                    <div style="display:flex; width: 100%; justify-content: center;">
+                        <div class="connection-line" style="height: 30px;"></div>
+                    </div>
+                    <!-- Connection branching visual implied by layout -->
+                    <div class="branch-container">
+                        <!-- Horizontal line simulation -->
+                        <div style="position: absolute; top: -15px; width: 80%; border-top: 2px solid #30363d;"></div>
+
+                        <div class="flex-col" style="align-items: center;">
+                            <div class="connection-line" style="height: 15px; margin-top: -15px;"></div>
+                            <div class="diagram-box sub">Search<br>(Haiku)</div>
+                        </div>
+                        <div class="flex-col" style="align-items: center;">
+                            <div class="connection-line" style="height: 15px; margin-top: -15px;"></div>
+                            <div class="diagram-box sub">Code<br>(Haiku)</div>
+                        </div>
+                        <div class="flex-col" style="align-items: center;">
+                            <div class="connection-line" style="height: 15px; margin-top: -15px;"></div>
+                            <div class="diagram-box sub">Review<br>(Opus)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-container fragment" style="justify-content: center; margin-top: 2rem;">
+                    <span class="highlight-box">เร็วกว่า (Parallel)</span>
+                    <span class="highlight-box">ถูกกว่า (Cost)</span>
+                    <span class="highlight-box">เฉพาะทาง (Specialized)</span>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Workflow -->
+            <section>
+                <h2>🔄 Multi-Agent Workflow</h2>
+
+                <!-- CSS Diagram Replacement -->
+                <div class="diagram-container" style="font-size: 0.8em;">
+                    <div class="diagram-box user">User Request</div>
+                    <div class="arrow-down">↓</div>
+                    <div class="flow-horizontal">
+                        <div class="diagram-box agent">Context Finder</div>
+                        <div class="arrow-right">→</div>
+                        <div class="diagram-box agent">Plan Agent</div>
+                    </div>
+
+                    <div class="arrow-down">↓</div>
+
+                    <div class="branch-container" style="margin-top: 0;">
+                        <div class="diagram-box sub">Coder 1</div>
+                        <div class="diagram-box sub">Coder 2</div>
+                        <div class="diagram-box sub">Coder 3</div>
+                    </div>
+
+                    <div class="arrow-down">↓</div>
+
+                    <div class="diagram-box agent">Review + Merge</div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: Digital Twin -->
+            <section>
+                <h2>👤 Your Digital Twin</h2>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <div
+                            style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 12px; border: 1px solid #30363d;">
+                            <img src="assets/arthur_digital_twin.png" alt="Arthur Digital Twin"
+                                style="width: 100%; border-radius: 8px;">
+                            <div style="font-size: 0.7em; text-align: center; color: #8b949e; margin-top: 5px;">Arthur:
+                                Your AI Digital Twin</div>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <ul>
+                            <li class="fragment">✅ AI ที่รู้จักวิธีคิดของคุณ</li>
+                            <li class="fragment">✅ CLAUDE.md ที่เป็น DNA ของคุณ</li>
+                            <li class="fragment">✅ Subagents เฉพาะทาง</li>
+                            <li class="fragment">✅ Workflow ที่ทำงานแทนคุณได้</li>
+                        </ul>
+                        <blockquote
+                            style="margin-top: 1.5rem; border-left: 5px solid var(--accent-cyan); padding-left: 1rem; font-size: 1.1em; background: #161b22; padding: 1rem; border-radius: 0 8px 8px 0;">
+                            "AI ไม่ได้มาแทนที่คุณ<br>
+                            AI มา amplify คุณ"
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 13: Takeaways -->
+            <section>
+                <h2>🎯 Key Takeaways</h2>
+                <ol style="font-size: 1.3em; line-height: 1.6;">
+                    <li><strong>CLAUDE.md = Your DNA</strong><br><span
+                            style="font-size: 0.7em; color: #8b949e;">ไฟล์เดียวที่ทำให้ AI รู้จักคุณ</span></li>
+                    <li><strong>Subagents = Delegation</strong><br><span style="font-size: 0.7em; color: #8b949e;">ให้
+                            AI มอบหมายงานให้ AI</span></li>
+                    <li><strong>Context > Prompts</strong><br><span
+                            style="font-size: 0.7em; color: #8b949e;">ให้ข้อมูลดี ได้คำตอบดี</span></li>
+                    <li><strong>Human in the Loop</strong><br><span style="font-size: 0.7em; color: #8b949e;">AI ช่วยคิด
+                            แต่คุณตัดสินใจ</span></li>
+                    <li><strong>Start Small, Iterate</strong></li>
+                </ol>
+            </section>
+
+            <!-- SLIDE 14: Q&A -->
+            <section data-background-color="#0d1117">
+                <div style="text-align: center;">
+                    <h1>💬 Q&A + Save & Share</h1>
+                    <div
+                        style="margin: 3rem 0; padding: 2rem; border: 2px dashed var(--accent-cyan); border-radius: 12px; display: inline-block;">
+                        <h3>โชว์ผลงานที่สร้างได้วันนี้:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>• CLAUDE.md ของคุณ</li>
+                            <li>• Subagent ที่สร้าง</li>
+                            <li>• Workflow ที่ออกแบบ</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 3rem; color: #8b949e;">
+                        <p><strong>GitHub:</strong> github.com/laris-co/Nat-s-Agents</p>
+                        <p><strong>Contact:</strong> nat@laris.co</p>
+                    </div>
+
+                    <h2 style="color: var(--accent-green); margin-top: 2rem;">Thank You! 🙏</h2>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            plugins: [RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+# Offload Snapshot 2026-01-08 07:19
+
+## 📚 Learn
+
+### aiplanethub/openagi
+- Time: 07:19
+- Source: https://github.com/aiplanethub/openagi
+- Path: /Users/nat/Code/github.com/aiplanethub/openagi
+- Indexed: 23 files
+
+### alchemycat/AI-HUMAN-COLLAB-CAT-LAB
+- Time: 07:19
+- Source: https://github.com/alchemycat/AI-HUMAN-COLLAB-CAT-LAB
+- Path: /Users/nat/Code/github.com/alchemycat/AI-HUMAN-COLLAB-CAT-LAB
+- Indexed: 2 files
+
+### anthropics/claude-code
+- Time: 07:19
+- Source: https://github.com/anthropics/claude-code
+- Path: /Users/nat/Code/github.com/anthropics/claude-code
+- Indexed: 1 files
+
+### anthropics/skills
+- Time: 07:19
+- Source: https://github.com/anthropics/skills
+- Path: /Users/nat/Code/github.com/anthropics/skills
+- Indexed: 1 files
+
+### ComposioHQ/awesome-claude-skills
+- Time: 07:19
+- Source: https://github.com/ComposioHQ/awesome-claude-skills
+- Path: /Users/nat/Code/github.com/ComposioHQ/awesome-claude-skills
+- Indexed: 1 files
+
+### github/spec-kit
+- Time: 07:19
+- Source: https://github.com/github/spec-kit
+- Path: /Users/nat/Code/github.com/github/spec-kit
+- Indexed: 7 files
+
+### keijiro/KlakMath
+- Time: 07:19
+- Source: https://github.com/keijiro/KlakMath
+- Path: /Users/nat/Code/github.com/keijiro/KlakMath
+- Indexed: 1 files
+
+### laris-co/esphome-fw
+- Time: 07:19
+- Source: https://github.com/laris-co/esphome-fw
+- Path: /Users/nat/Code/github.com/laris-co/esphome-fw
+- Indexed: 25 files
+
+### pocketbase/pocketbase
+- Time: 07:19
+- Source: https://github.com/pocketbase/pocketbase
+- Path: /Users/nat/Code/github.com/pocketbase/pocketbase
+- Indexed: 1 files
+
+### RawinLab/claude-plugins
+- Time: 07:19
+- Source: https://github.com/RawinLab/claude-plugins
+- Path: /Users/nat/Code/github.com/RawinLab/claude-plugins
+- Indexed: 1 files
+
+### SawyerHood/dev-browser
+- Time: 07:19
+- Source: https://github.com/SawyerHood/dev-browser
+- Path: /Users/nat/Code/github.com/SawyerHood/dev-browser
+- Indexed: 1 files
+
+### Soul-Brews-Studio/oracle-voice-tray
+- Time: 07:19
+- Source: https://github.com/Soul-Brews-Studio/oracle-voice-tray
+- Path: /Users/nat/Code/github.com/Soul-Brews-Studio/oracle-voice-tray
+- Indexed: 4 files
+
+### steveyegge/beads
+- Time: 07:19
+- Source: https://github.com/steveyegge/beads
+- Path: /Users/nat/Code/github.com/steveyegge/beads
+- Indexed: 50 files
+
+### thedotmack/claude-mem
+- Time: 07:19
+- Source: https://github.com/thedotmack/claude-mem
+- Path: /Users/nat/Code/github.com/thedotmack/claude-mem
+- Indexed: 67 files
+
+### wshobson/agents
+- Time: 07:19
+- Source: https://github.com/wshobson/agents
+- Path: /Users/nat/Code/github.com/wshobson/agents
+- Indexed: 6 files
+
+## 🌱 Incubate
+
+### laris-co/bun-process-manager
+- Time: 07:19
+- Source: https://github.com/laris-co/bun-process-manager
+- Path: /Users/nat/Code/github.com/laris-co/bun-process-manager
+- Indexed: 1 files
+
+### laris-co/claude-browser-proxy
+- Time: 07:19
+- Source: https://github.com/laris-co/claude-browser-proxy
+- Path: /Users/nat/Code/github.com/laris-co/claude-browser-proxy
+- Indexed: 1 files
+
+### laris-co/fusionsolar-scraper
+- Time: 07:19
+- Source: https://github.com/laris-co/fusionsolar-scraper
+- Path: /Users/nat/Code/github.com/laris-co/fusionsolar-scraper
+- Indexed: 1 files
+
+### laris-co/headline-rag
+- Time: 07:19
+- Source: https://github.com/laris-co/headline-rag
+- Path: /Users/nat/Code/github.com/laris-co/headline-rag
+- Indexed: 1 files
+
+### laris-co/voice-tray-v2
+- Time: 07:19
+- Source: https://github.com/laris-co/voice-tray-v2
+- Path: /Users/nat/Code/github.com/laris-co/voice-tray-v2
+- Indexed: 4 files
+
+## Restore Commands
+```bash
+/project learn [owner/repo]     # restore to learn
+/project incubate [owner/repo]  # restore to incubate
+```

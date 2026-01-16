@@ -1,0 +1,54 @@
+{
+  "project": "laris-co/esphome-fw",
+  "source": "https://github.com/laris-co/esphome-fw",
+  "local_path": "/Users/nat/Code/github.com/laris-co/esphome-fw",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/09/2025-09-27_15-01_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/09/2025-09-27_15-29_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/09/2025-09-27_16-28_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/09/2025-09-27_15-56_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/01/2025-01-13_15-00_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-14_16-10_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-23_09-30_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-13_11-50_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-14_16-00_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-13_01-55_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-14_17-30_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-13_09-55_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-14_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-13_12-50_final_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-23_09-00_retrospective.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/retrospectives/2025/06/2025-06-14_11-30_retrospective.md"
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/MQTT_PUBLISH_COUNT_FIX.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/03-retrospectives/2025-01-27-documentation-reorg/AI_DIARY.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/03-retrospectives/2025-01-27-documentation-reorg/LESSONS_LEARNED.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/03-retrospectives/2025-01-27-documentation-reorg/RETROSPECTIVE.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/archive/2025-06-13_18-02-cleanup/floodboy-actual-controls.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/plan-sim7600e-at-mqtt-external-component.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/02-development/firmware-build-and-rsync.md"
+,
+    "/Users/nat/Code/github.com/laris-co/esphome-fw/docs/02-development/AGENTS_CLAUDE_COMPARISON.md"
+  ]
+}

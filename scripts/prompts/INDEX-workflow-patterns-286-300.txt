@@ -1,0 +1,93 @@
+ANTIGRAVITY VISUAL PROMPTS: WORKFLOW PATTERNS (286-300)
+========================================================
+
+Created: 2025-12-23
+Style: Oracle (ink-wash + geometry, monochrome with cyan/gold accents)
+Format: Markdown prompt files for AI image generation
+Directory: /scripts/prompts/
+
+QUICK INDEX
+-----------
+
+286 | Marie Kondo Consultant     | File placement decisions          | antigravity-286-marie-kondo-consultant.md
+287 | Archiver Pattern           | Finding unused, preparing archive | antigravity-287-archiver-pattern.md
+288 | Context Finder Magnifying  | Searching everything              | antigravity-288-context-finder-magnifying.md
+289 | Executor Pipeline          | Running commands from issues      | antigravity-289-executor-pipeline.md
+290 | Coder Craftsman            | Writing quality code              | antigravity-290-coder-craftsman.md
+291 | Plan Mode Blueprint        | Planning before coding            | antigravity-291-plan-mode-blueprint.md
+292 | GOGOGO Execution           | Rapid implementation              | antigravity-292-gogogo-execution.md
+293 | RRR Retrospective Ritual   | End of session reflection         | antigravity-293-rrr-retrospective.md
+294 | Snapshot Quick Capture     | Quick knowledge capture           | antigravity-294-snapshot-quick-capture.md
+295 | Distill Extraction         | Patterns from sessions            | antigravity-295-distill-extraction.md
+296 | Jump Stack Navigation      | Topic switching                   | antigravity-296-jump-stack-navigation.md
+297 | Pending Task Queue         | WIP tracking                      | antigravity-297-pending-task-queue.md
+298 | Activity Log Stream        | Continuous logging                | antigravity-298-activity-log-stream.md
+299 | Focus State Machine        | Working -> focusing -> pending    | antigravity-299-focus-state-machine.md
+300 | Session Handoff Bridge     | Transferring between sessions     | antigravity-300-session-handoff-bridge.md
+
+COVERAGE AREAS
+--------------
+
+Delegation & Organization:
+  - 286: Marie Kondo Consultant (file placement)
+  - 287: Archiver Pattern (archiving strategy)
+  - 297: Pending Task Queue (WIP tracking)
+
+Search & Analysis:
+  - 288: Context Finder (searching everything)
+  - 295: Distill Extraction (pattern refinement)
+
+Execution:
+  - 289: Executor Pipeline (command orchestration)
+  - 290: Coder Craftsman (quality code)
+  - 292: GOGOGO Execution (rapid implementation)
+
+Planning & Reflection:
+  - 291: Plan Mode Blueprint (pre-execution planning)
+  - 293: RRR Retrospective (session reflection)
+  - 294: Snapshot Quick Capture (knowledge capture)
+
+State & Context Management:
+  - 296: Jump Stack Navigation (topic switching)
+  - 298: Activity Log Stream (continuous logging)
+  - 299: Focus State Machine (attention states)
+  - 300: Session Handoff Bridge (knowledge transfer)
+
+ORACLE VISUAL SYSTEM
+--------------------
+
+All prompts use:
+- Ink-wash base (monochrome, fluid)
+- Geometric overlays (precision structure)
+- Cyan accents (semi-transparent, indicating states/energy)
+- Gold accents (highlights, completion, flow)
+- Thai typography (open-source fonts only)
+- Aspect ratio: 16:9 (landscape)
+
+KEY SYMBOLISM
+-------------
+
+Figures: Represent agents, workers, or the user
+Flow: Represents processes, information, energy
+Containers: Store completed work, archived items, knowledge
+Bridges: Connect sessions, contexts, phases
+Layers: Show depth, progression, or hierarchy
+Glow/Auras: Indicate focus, importance, or state
+
+NEXT STEPS
+----------
+
+1. Generate images from prompts using preferred AI tool
+2. Save PNG files to results/ directory with matching naming
+3. Create visual glossary/reference document
+4. Integrate into workflow documentation
+5. Use in presentations or educational materials
+
+METADATA
+--------
+
+Format: Markdown frontmatter + code block
+Status: All pending (ready for image generation)
+Category: workflow-patterns
+Created: 2025-12-23
+Total Files: 15 + 1 summary + 1 index

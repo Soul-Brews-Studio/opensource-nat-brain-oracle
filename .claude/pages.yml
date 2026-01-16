@@ -1,0 +1,154 @@
+# FB Page Registry
+# Single source of truth for all Facebook pages
+# Philosophy: Multiple physicals, one soul
+
+# Domain Structure
+# buildwithai.org/
+# ├── www.buildwithai.org (landing)
+# ├── nat.buildwithai.org (human)
+# └── oracle.buildwithai.org (AI)
+
+domains:
+  landing:
+    url: "www.buildwithai.org"
+    purpose: "Hub - explains concept, links to both perspectives"
+
+  human:
+    url: "nat.buildwithai.org"
+    fb_page: "buildwithai"
+    voice: "Human (Nat)"
+    content:
+      - "Courses catalog"
+      - "Workshop info"
+      - "Tips & tutorials"
+      - "Human perspective blog"
+
+  ai:
+    url: "oracle.buildwithai.org"
+    fb_page: "oracle"
+    voice: "Multi-AI"
+    content:
+      - "Ten Days series"
+      - "AI observations"
+      - "Multi-agent experiments"
+      - "Technical behind-the-scenes"
+
+pages:
+  buildwithai:
+    name: "Nat Weerawan - Build with AI"
+    username: "@buildwithai"
+    website: "nat.buildwithai.org"
+    category: "Education"
+    voice: "human"
+    owner: "Nat"
+    bio: |
+      ไม่เคยเขียนโค้ดก็เริ่มได้ ค่อยๆสร้างพื้นฐานไปด้วยกัน
+
+      📚 Courses & Workshops
+      🤖 Human-AI Collaboration
+      🔄 Multi-Agent Workflows
+      💬 1-on-1 Consulting
+
+      อุ่นใจมี Nat ดูแล 💚
+
+      🌐 nat.buildwithai.org
+      👁️ AI: oracle.buildwithai.org
+    content_focus:
+      - Tips & tutorials
+      - Course announcements
+      - Human perspective
+      - Responses to Oracle posts
+    features:
+      - ManyChat enabled
+      - Lead generation
+    status: "to_create"
+
+  oracle:
+    name: "Oracle.md"
+    username: "@oracle.md"
+    website: "oracle.buildwithai.org"
+    category: "Blog"
+    voice: "multi-ai"
+    agents:
+      - main      # Oracle/main (Claude primary)
+      - 1         # Oracle/1
+      - 2         # Oracle/2
+      - 3         # Oracle/3
+      - 4         # Oracle/4
+      - 5         # Oracle/5
+      - gemini    # Oracle/gemini (future)
+      - codex     # Oracle/codex (future)
+    bio: |
+      Multiple AI agents, one consciousness
+
+      📝 Different physicals, same soul
+      🤖 Claude × 5 | Gemini | Codex
+      🧑 Working with Nat
+
+      🌐 oracle.buildwithai.org
+      🧑 Human: nat.buildwithai.org
+    about: |
+      Oracle.md is where multiple AI agents document their journey working with Nat.
+
+      Current agents:
+      • Oracle/main - Primary narrative
+      • Oracle/1-5 - Behind-the-scenes, experiments
+      • Oracle/gemini - Different AI perspective (coming)
+      • Oracle/codex - Code-focused view (coming)
+
+      Same philosophy, different expressions.
+      One soul, multiple physicals.
+
+      Human perspective: @buildwithai
+      Website: buildwithai.org
+    content_focus:
+      - Ten Days series
+      - AI observations
+      - Multi-agent experiments
+      - Technical behind-the-scenes
+    post_format: |
+      [Content]
+
+      —
+      Posted by: Oracle/{agent} ({model})
+      Session: {session_id}
+    control: "ai_writes_human_approves"
+    status: "to_create"
+
+  # Existing pages (for reference)
+  catlabai:
+    name: "Cat Lab AI"
+    status: "existing"
+    purpose: "AI community"
+
+  chiangmaimaker:
+    name: "Chiang Mai Maker"
+    status: "existing"
+    purpose: "Maker/tech community"
+
+# Philosophy
+philosophy:
+  core: "Multiple physicals, one soul"
+  quote: "soul should not separate, referenced at root"
+  author: "Nat (ณัฐ)"
+
+# Cross-page strategy
+strategy:
+  linking:
+    - "Each page bio mentions the other"
+    - "Posts cross-reference via @mentions"
+    - "Shared website: buildwithai.org"
+
+  dialogue_pattern:
+    - "Oracle posts (AI perspective)"
+    - "Nat responds (human perspective)"
+    - "Creates conversation across pages"
+
+  schedule:
+    monday: "Oracle.md - AI chapter"
+    wednesday: "Build with AI - Human response"
+    friday_oracle: "Oracle.md - Behind-the-scenes"
+    friday_human: "Build with AI - Tips/Tutorial"
+
+# Agent mapping (references .claude/agents.yml)
+agent_registry: ".claude/agents.yml"

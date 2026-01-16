@@ -1,0 +1,17 @@
+{
+  "project": "wshobson/agents",
+  "source": "https://github.com/wshobson/agents",
+  "local_path": "/Users/nat/Code/github.com/wshobson/agents",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/wshobson/agents/docs/architecture.md"
+,
+    "/Users/nat/Code/github.com/wshobson/agents/docs/usage.md"
+,
+    "/Users/nat/Code/github.com/wshobson/agents/docs/plugins.md"
+,
+    "/Users/nat/Code/github.com/wshobson/agents/docs/agents.md"
+,
+    "/Users/nat/Code/github.com/wshobson/agents/docs/agent-skills.md"
+  ]
+}

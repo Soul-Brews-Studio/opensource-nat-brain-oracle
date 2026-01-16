@@ -1,0 +1,20 @@
+Create workshop slides from the Workshop HTML content.
+
+Source file: /Users/nat/Downloads/Workshop /Workshop.html
+
+Task:
+1. Read ALL content from the HTML file
+2. Organize into a slide deck format (markdown)
+3. Structure for full-day workshop (9am-5pm, Dec 26, SIIT)
+4. Include:
+   - Data prep exercises (Gemini Deep Research)
+   - GitHub setup steps
+   - Claude Code workflows (portfolio, voice notify, rrr)
+   - Hands-on exercises
+   - Key takeaways
+
+Save to: ψ/active/workshop/siit-dec26-workshop-slides.md
+
+Target: 20-30 slides covering all workshop content
+Format: Markdown with --- slide separators
+Tone: Practical, hands-on, Thai + English mix

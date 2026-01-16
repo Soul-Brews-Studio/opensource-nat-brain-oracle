@@ -1,0 +1,84 @@
+# Auto-Handoff Log
+
+Appended when context reaches 97%+. Use `/recap` to orient.
+
+
+---
+## 2026-01-14 11:42 | 97%
+
+**Focus**: TASK: Oracle 3D Graph visualization with KlakMath patterns - sphere mode, HUD controls, dynamic links
+
+**Commits**:
+  2537bc58 learn: Port migration 37778 → 47778 documented
+  5967b3a3 docs: Update port 37778 → 47778 in active docs
+  c429d810 docs: Add instructions to token-check.sh header
+
+---
+## 2026-01-15 09:14 | 28%
+
+**Focus**: Fixing rrr skill template + handoff consolidation
+
+**Commits**:
+  1894bbe9 rrr: retro-header-fix-skill-template + lesson learned
+  8f550bff learn: Skill templates must be explicit
+  d832e838 fix: Add missing Date/Time headers to 7 retrospectives
+  6dc77d87 rrr: oracle-v2-integration-tests-critical-fix + lesson learned
+
+**Done this session**:
+- Fixed 7 retrospectives missing Date/Time headers
+- Updated rrr skill with explicit REQUIRED HEADER template
+- Created lesson learned: "Don't describe the format. Show the format."
+- Archived 42 old handoff files → ψ/memory/archive/handoffs/
+- Consolidated handoff pattern: append to log → archive when done
+
+**Pending**:
+- Push MISSION-05 to Soul-Brews-Studio
+- Tell BM: `git pull && ./scripts/setup.sh` should now work
+
+---
+## 2026-01-15 10:02 | 79%
+
+**Focus**: Oracle-v2 open source cleanup + distribution strategy
+
+**Commits** (oracle-v2):
+  4965782 security: Remove all hardcoded personal paths
+  c18521f fix: Port migration 37778 → 47778 + frontend fixes
+  72f91d4 ci: Add npm auto-publish workflow (nightly)
+
+**Done**:
+- Oracle-v2 clean for open source (no personal paths, correct port)
+- npm publish workflow ready (needs NPM_TOKEN to activate)
+- Handoff system consolidated (42 files archived)
+
+**Open question**: Distribution - GitHub only vs npm vs MCP Registry?
+
+**Pending**:
+- Push MISSION-05 to Soul-Brews-Studio
+- Tell BM setup is ready
+- Decide npm publish strategy
+
+---
+## 2026-01-15 10:07 | 84%
+
+**Focus**: Soul-Brews MCP Marketplace discovery
+
+**Decision**: Skip npm public registry → Use private marketplace + bunx
+
+**Distribution strategy discovered**:
+1. `bunx github:laris-co/oracle-v2` - works NOW, no npm needed
+2. Soul-Brews MCP Marketplace - private discovery
+3. GitHub Packages - if npm-style needed later
+
+**Soul-Brews-Studio inventory traced**:
+- MCP Servers: oracle-v2
+- Skills: oracle-proof-of-concept-skills (13)
+- Frameworks: oracle-framework, oracle-starter-kit
+- Plugins: claude-project-manager, ralph-local
+- Squad Missions: mission-02, 03, 04
+
+**Next session**:
+- [ ] Create Soul-Brews-Studio/mcp-marketplace repo
+- [ ] Add oracle-v2 as first server
+- [ ] Link existing skills
+- [ ] Test: `/plugin marketplace add Soul-Brews-Studio/mcp-marketplace`
+

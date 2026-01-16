@@ -1,0 +1,1 @@
+/Users/nat/Code/github.com/laris-co/claude-voice-notify/scripts/agent-start-notify.sh

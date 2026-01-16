@@ -1,0 +1,105 @@
+{
+  "project": "steveyegge/beads",
+  "source": "https://github.com/steveyegge/beads",
+  "local_path": "/Users/nat/Code/github.com/steveyegge/beads",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/PERFORMANCE_TESTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/CONTRIBUTOR_NAMESPACE_ISOLATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ROUTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/MOLECULES.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/DELETIONS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/CLI_REFERENCE.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/PLUGIN.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ARCHITECTURE.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/RELEASING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ERROR_HANDLING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/CLAUDE_INTEGRATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/LINTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/TROUBLESHOOTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ATTRIBUTION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/SETUP.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ADAPTIVE_IDS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/dev-notes/TEST_SUITE_AUDIT.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/dev-notes/ERROR_HANDLING_AUDIT.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/dev-notes/MAIN_TEST_REFACTOR_NOTES.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/dev-notes/MAIN_TEST_CLEANUP_PLAN.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/EXTENDING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/WORKTREES.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/DAEMON.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/QUICKSTART.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/FAQ.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/TESTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/INSTALLING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/COLLISION_MATH.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/CONFIG.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/UNINSTALLING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/INTERNALS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/graph-links.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/PROTECTED_BRANCHES.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ADVANCED.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/AIDER_INTEGRATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/TESTING_PHILOSOPHY.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/MULTI_REPO_HYDRATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/GIT_INTEGRATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/LABELS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/pr-752-chaos-testing-review.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/EXCLUSIVE_LOCK.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/MULTI_REPO_AGENTS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/MULTI_REPO_MIGRATION.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/daemon-summary.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/UI_PHILOSOPHY.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/COMMUNITY_TOOLS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/README_TESTING.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/ANTIVIRUS.md"
+,
+    "/Users/nat/Code/github.com/steveyegge/beads/docs/CLAUDE.md"
+  ]
+}

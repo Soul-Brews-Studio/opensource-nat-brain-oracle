@@ -1,0 +1,140 @@
+GRADUATED PROJECTS IMAGE PROMPTS: 381-390
+Generation Summary
+Created: 2025-12-24
+Format: Visual Prompts for Image Generation (DALL-E 3 / Midjourney)
+
+STYLE GUIDE (APPLIED TO ALL 10)
+- Monochrome ink-wash base (90%)
+- Cyan energy/flow lines (7%)
+- Gold completion/decision markers (3%)
+- 16:9 aspect ratio, PNG format
+- Fonts: Noto Sans Thai, Prompt, Kanit, Sarabun only
+
+PROJECT LIST WITH THEMES
+
+381 - ANTIGRAVITY GALLERY
+Title (EN): Visual Prompt Collection Display
+Title (TH): ห้องแสดงศิลป์ลอยลำ (Hông Sadaeng Sinlap Loi Lam)
+Theme: Floating ideas in gravity-defiant gallery space
+Key Elements: Levitating cards, cyan energy orbs, gold tracing pathways
+Visual Angle: Overhead perspective, ascending motion, centralizing nexus
+
+382 - FLOODBOY SENSOR
+Title (EN): Water Level Monitoring Device
+Title (TH): เซนเซอร์จับน้ำท่วม (Sensoe Jab Nam Thuam)
+Theme: Water level detection and fluid dynamics
+Key Elements: Rippling water cross-section, submerged sensor, sonar waves
+Visual Angle: Side profile, wave patterns, measurement thresholds
+
+383 - THE HEADLINE
+Title (EN): News Aggregator Interface
+Title (TH): หัวข่าว (Hua Khao)
+Theme: Layered information gathering and editorial filtering
+Key Elements: Cascading newspaper layers, cyan reading paths, gold emphasis
+Visual Angle: Diagonal composition, text-scanning, filtering hierarchy
+
+384 - CLAUDE VOICE NOTIFY
+Title (EN): Thai Voice Synthesis System
+Title (TH): голос ประกาศ (Siang Prakad)
+Theme: Sound waves and language materialization
+Key Elements: Concentric sound rings, Thai text materialization, phonetic flow
+Visual Angle: Radial expansion, text-to-speech transformation
+
+385 - ARTHUR DEMO
+Title (EN): AI Assistant Showcase
+Title (TH): อาเธอร์สาธิต (Atho Sathit)
+Theme: Presentation of AI capabilities and interface
+Key Elements: Humanoid form, luminous core, demonstration panels, teaching flows
+Visual Angle: Formal portrait, conversation stance, gesture indication
+
+386 - MULTI-AGENT WORKSHOP
+Title (EN): Teaching MAW Patterns
+Title (TH): เวิร์คชอปมัลติเอเจนต์ (Woekhop Multi-Agent)
+Theme: Distributed agent collaboration and synchronization
+Key Elements: Network nodes, cyan message flows, gold handoff points, human figures
+Visual Angle: Bird's eye overhead view, organic network, message intensity variation
+
+387 - NAT AGENTS CORE
+Title (EN): Agent Framework Foundation
+Title (TH): แกนหลักตัวแทนไทย (Gaen Lak Tuathaen Thai)
+Theme: Architectural blueprint of layered abstraction
+Key Elements: Stacked geometric layers, vertical/horizontal connections, core nexus
+Visual Angle: Structural blueprint, ascending complexity, hierarchical depth
+
+388 - OBSIDIAN VAULT
+Title (EN): Knowledge Management System
+Title (TH): ห้องเก็บสมบัติความรู้ (Hong Kep Sombat Khomruu)
+Theme: Nested chambers of organized knowledge
+Key Elements: Obsidian chambers, interconnected links, page scrolls, magnifying focus
+Visual Angle: Cross-section view, progressive nesting, knowledge convergence
+
+389 - ESPHOME RADAR
+Title (EN): Presence Detection Hardware
+Title (TH): เรดาร์สนับสนุนเสพ (Redah Subnansanun Sep)
+Theme: Active detection and scanning visualization
+Key Elements: Concentric scan lines, target detection, sensor at center, data readout
+Visual Angle: Top-down radar view, expanding rings, dynamic scanning
+
+390 - NAT-DATA-PERSONAL
+Title (EN): Personal Data Oracle
+Title (TH): โอรัคเคิลข้อมูลส่วนตัว (Orakul Khomul Suantu)
+Theme: Living memory archive and personal history preservation
+Key Elements: Central oracle sphere, memory fragments, constellation nodes, time layers
+Visual Angle: Portrait composition, radiant energy, organic constellation pattern
+
+BATCH METADATA SUMMARY
+
+Project types represented:
+- Visual Display (381)
+- IoT Hardware (382)
+- News Aggregation (383)
+- Voice Synthesis (384)
+- AI Showcase (385)
+- Education/Collaboration (386)
+- Framework/Architecture (387)
+- Knowledge Base (388)
+- Presence Detection (389)
+- Personal Oracle (390)
+
+VISUAL COHESION
+When displayed as series (381-390), all images unified by:
+1. Consistent monochrome + cyan + gold palette
+2. Ink-wash artistic technique throughout
+3. 16:9 landscape aspect ratio
+4. Thai language integration across all pieces
+5. Energy/completion visualization language
+
+GENERATION PATH
+
+For DALL-E 3:
+1. Copy prompt text from main document
+2. Add "Aspect ratio: 16:9, Style: Monochrome ink-wash with cyan energy lines and gold completion markers, Output format: PNG"
+3. Generate image
+4. Save to results/ directory with filename format: [number]-[slug].png
+
+For Midjourney:
+1. Copy prompt text
+2. Add parameters: --aspect 16:9 --style raw --niji 0
+3. Generate image
+4. Save same as above
+
+POST-GENERATION CHECKLIST
+- Verify 16:9 aspect ratio (1920x1080 or equivalent)
+- Check color palette matches (mono + cyan + gold, no other colors)
+- Verify Thai fonts readable (Noto Sans Thai, Prompt, Kanit, Sarabun)
+- Confirm PNG format
+- Place in results/ directory
+- Add entry to INDEX-visual-prompts.md
+- Update filename in batch metadata
+
+FILES CREATED
+- Main prompts document: /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/slides/visual-prompts-graduated-projects.md (18 KB)
+- This summary: /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/slides/results/GRADUATED-PROJECTS-PROMPTS-381-390.txt
+
+STATUS: Ready for image generation
+
+Next steps:
+1. Use DALL-E 3 or Midjourney to generate images 381-390
+2. Save PNG files to results/ directory with proper numbering
+3. Update INDEX-visual-prompts.md with new entries
+4. Optionally create theme gallery or interactive presentation with all 10 images

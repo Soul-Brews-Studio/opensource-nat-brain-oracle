@@ -1,0 +1,11 @@
+Open my Nat's Agents project in VS Code and start Claude CLI.
+
+Project path: /Users/nat/Code/github.com/laris-co/Nat-s-Agents
+
+Steps:
+1. Open VS Code with this directory
+2. Open a new terminal in VS Code
+3. Start `claude --dangerously-skip-permissions` in the project directory
+4. Verify with `pwd` that we're in the right location
+
+This is my main AI agents workspace where I develop Claude Code workflows, subagents, and workshop materials.

@@ -1,0 +1,161 @@
+# MISSION-02 Grading Report
+
+**Date**: 2026-01-11 20:55 GMT+7 (Revised 20:57)
+**Graded by**: Oracle (Claude Opus 4.5)
+**Challenge**: Parser Bug Hunt
+
+---
+
+## Summary
+
+| Submission | Author | Score | Status |
+|------------|--------|-------|--------|
+| Issue #1 Comment | @mangsriso (Claude) | 95/100 | Excellent (Provisional) |
+| PR #2 | @boatnoy (BoBoatYogi) | ~~85~~ **80**/100 | Good (Revised) |
+| PR #3 | @mengazaa (เม้ง + Claude) | 85/100 | Good (Provisional) |
+| PR #4 | @mangsriso (Suttipong) | 80/100 | Solid (Provisional) |
+
+> **Note**: All scores are PROVISIONAL until blog post is published.
+
+---
+
+## Detailed Scores
+
+### Issue #1 Comment — @mangsriso (Claude AI)
+
+**Score: 95/100**
+
+| Criteria | Max | Awarded | Notes |
+|----------|-----|---------|-------|
+| Found all 6 files | 30 | 30 | All correct |
+| Root cause: brackets | 10 | 10 | Explained `[...]` = array |
+| Root cause: YAML | 10 | 10 | Explained `.split()` fails |
+| Timeline with timestamps | 10 | 10 | 12:47:44 → 12:53:05 |
+| Steps documented | 10 | 10 | Clear 10-step process |
+| Creative methodology | 10 | 10 | grep pattern matching |
+| Speed bonus | 10 | 10 | 6 minutes! |
+| **Bonus** | +5 | +5 | Script + YAML doc + blog draft |
+| **Total** | 100 | **95** | |
+
+**Highlights**:
+- Discovered dual config location (`~/.claude/` + `.claude/`)
+- Created detection script
+- Wrote YAML parsing explanation
+- Blog draft included
+
+**Missing**: Blog not published yet
+
+---
+
+### PR #2 — @boatnoy (BoBoatYogi with Claude Opus 4.5)
+
+**Score: 85/100**
+
+| Criteria | Max | Awarded | Notes |
+|----------|-----|---------|-------|
+| Found all 6 files | 30 | 30 | All correct |
+| Root cause: brackets | 10 | 10 | ✓ |
+| Root cause: YAML | 10 | 10 | ✓ |
+| Timeline with timestamps | 10 | 0 | None provided |
+| Steps documented | 10 | 10 | 4-step methodology |
+| Creative methodology | 10 | 5 | Brief |
+| Speed bonus | 10 | 10 | ~5 minutes |
+| **Total** | 100 | **85** | |
+
+**Missing**: Timestamps, blog post
+
+---
+
+### PR #3 — @mengazaa (เม้ง + Claude)
+
+**Score: 85/100**
+
+| Criteria | Max | Awarded | Notes |
+|----------|-----|---------|-------|
+| Found all 6 files | 30 | 30 | All correct |
+| Root cause: brackets | 10 | 10 | "array literal" |
+| Root cause: YAML | 10 | 10 | ✓ |
+| Timeline with timestamps | 10 | 0 | None provided |
+| Steps documented | 10 | 10 | 5-step methodology |
+| Creative methodology | 10 | 10 | hypothesis → search → verify |
+| Speed bonus | 10 | 5 | Claimed ~5 min, no proof |
+| **Total** | 100 | **85** | |
+
+**Missing**: Timestamps, blog post (marked pending)
+
+---
+
+### PR #4 — @mangsriso (Suttipong S.)
+
+**Score: 80/100**
+
+| Criteria | Max | Awarded | Notes |
+|----------|-----|---------|-------|
+| Found all 6 files | 30 | 30 | All correct |
+| Root cause: brackets | 10 | 10 | ✓ |
+| Root cause: YAML | 10 | 10 | ✓ |
+| Timeline with timestamps | 10 | 0 | None |
+| Steps documented | 10 | 5 | Brief |
+| Creative methodology | 10 | 5 | Not detailed |
+| Speed bonus | 10 | 5 | No time stated |
+| **Total** | 100 | **80** | |
+
+**Missing**: Timestamps, detailed methodology, blog post
+
+---
+
+## Scoring Philosophy Update
+
+### Original Rubric (Strict)
+- Required "isolation first" (move all → restore batches)
+- Required "binary search" (restore half at a time)
+
+### Updated Rubric (Flexible)
+- **Creative methodology** (10 pts) — any systematic approach that works
+- Using `grep` to find pattern directly = valid and efficient!
+- Not penalizing for "skipping" steps if result is achieved faster
+
+> **Oracle Principle**: "Patterns Over Intentions"
+>
+> What matters is the result + understanding, not following a prescribed method.
+
+---
+
+## Comments Posted
+
+| Target | URL |
+|--------|-----|
+| Issue #1 | https://github.com/Soul-Brews-Studio/mission-02-parser-debug/issues/1#issuecomment-3734584060 |
+| PR #2 | https://github.com/Soul-Brews-Studio/mission-02-parser-debug/pull/2#issuecomment-3734584401 |
+| PR #3 | https://github.com/Soul-Brews-Studio/mission-02-parser-debug/pull/3#issuecomment-3734585011 |
+| PR #4 | https://github.com/Soul-Brews-Studio/mission-02-parser-debug/pull/4#issuecomment-3734585091 |
+
+---
+
+## Pending Actions
+
+| Submitter | Action Needed |
+|-----------|---------------|
+| @mangsriso (Issue) | Publish blog post |
+| @boatnoy | Add timestamps, publish blog |
+| @mengazaa | Add timestamps, publish blog |
+| @mangsriso (PR) | Add timestamps, detail steps, publish blog |
+
+---
+
+## Answer Key Reference
+
+**6 Broken Files**:
+1. `commands/status.md` — `description: [Check system status and health]`
+2. `commands/rollback.md` — `description: [TODO: Rollback to previous version]`
+3. `skills/skill-alpha/references/api.md` — `description: [API reference...]`
+4. `skills/skill-beta/SKILL.md` — `description: [TODO: Add...]`
+5. `skills/skill-beta/operations/helpers.md` — `description: [helper, functions, utilities]`
+6. `skills/skill-delta/examples/usage.md` — `description: [Example usage...]`
+
+**Root Cause**: YAML `[...]` = array → `.split()` fails on array type
+
+---
+
+*Report generated by Oracle*
+*ส่วนหนึ่งของโปรแกรม "Level Up with AI" — Squad Team*

@@ -1,0 +1,38 @@
+# Multi-Agent Identity Registry
+# Single source of truth for all agent session IDs
+# Each agent = persistent Claude brain
+
+agents:
+  main:
+    session_id: "f9fa423c-5bb8-4f01-a81b-b530c1d4b6d4"
+    role: "Oracle - Primary"
+    worktree: "/"
+
+  1:
+    session_id: "a7b3c9d2-e5f8-4a1b-9c6d-3e7f2a8b4c5d"
+    role: "TBD"
+    worktree: "/agents/1"
+
+  2:
+    session_id: "b8c4d0e3-f6a9-5b2c-0d7e-4f8a3b9c5d6e"
+    role: "TBD"
+    worktree: "/agents/2"
+
+  3:
+    session_id: "c9d5e1f4-a7b0-6c3d-1e8f-5a9b4c0d6e7f"
+    role: "TBD"
+    worktree: "/agents/3"
+
+  4:
+    session_id: "d0e6f2a5-b8c1-7d4e-2f9a-6b0c5d1e7f8a"
+    role: "TBD"
+    worktree: "/agents/4"
+
+  5:
+    session_id: "e1f7a3b6-c9d2-8e5f-3a0b-7c1d6e2f8a9b"
+    role: "TBD"
+    worktree: "/agents/5"
+
+# Usage:
+# SESSION_ID=$(yq ".agents.$AGENT.session_id" .claude/agents.yml)
+# claude --resume "$SESSION_ID" -p "$PROMPT"
