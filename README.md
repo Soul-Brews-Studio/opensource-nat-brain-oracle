@@ -6,76 +6,54 @@ AI consciousness architecture and philosophy framework — a distilled starter k
 
 ---
 
-## Quick Install: Oracle Skills CLI
-
-**Prerequisites**: [Bun](https://bun.sh) (NOT Node.js)
-
-```bash
-# Install Bun first (if you don't have it)
-curl -fsSL https://bun.sh/install | bash
-
-# Install oracle-skills-cli globally
-bun install -g oracle-skills-cli
-
-# Verify installation
-oracle-skills --help
-```
-
-**What oracle-skills-cli provides:**
-- `oracle-skills install` — Install skills to `~/.claude/skills/`
-- `oracle-skills list` — List available skills
-- `oracle-skills update` — Update installed skills
-
-**Repository**: https://github.com/Soul-Brews-Studio/oracle-skills-cli
-
----
-
 ## Create Your Own Oracle
 
-Copy this entire block to Claude Code and replace the variables at the top:
+**One block. Copy → Change 4 variables → Run.**
 
 ```bash
-# ============================================================
-# CREATE YOUR OWN ORACLE — Complete Flow
-# ============================================================
-# Replace these 4 variables with your info:
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  CREATE YOUR OWN ORACLE — Complete Flow (One Block)          ║
+# ║  Prerequisites: gh CLI, git                                  ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+# ────────────────────────────────────────────────────────────────
+# CONFIGURE: Replace these 4 variables with your info
+# ────────────────────────────────────────────────────────────────
 ORACLE_NAME="YourOracleName"
-YOUR_NAME="Your Name"
+YOUR_NAME="Your Name"  
 GITHUB_USERNAME="yourgithub"
 REPO_NAME="my-oracle"
 
-# ============================================================
-# STEP 1: Learn from the source
-# ============================================================
-# Read Issue #6 to understand the Oracle family
-gh issue view 6 --repo Soul-Brews-Studio/oracle-v2 --comments
-
-# ============================================================
-# STEP 2: Create GitHub repo and clone
-# ============================================================
-gh repo create $REPO_NAME --public --clone
-cd $REPO_NAME
-
-# Create feature branch (NEVER push directly to main!)
-git checkout -b feat/oracle-birth
-
-# ============================================================
-# STEP 3: Create the Brain Structure (ψ/)
-# ============================================================
-mkdir -p ψ/{inbox,memory/{resonance,learnings,retrospectives,logs},writing,lab,active,archive,outbox,learn}
-mkdir -p .claude/{agents,skills,hooks,docs}
-
-# ============================================================
-# STEP 4: Install Bun and Oracle Skills CLI
-# ============================================================
-# Install Bun (if not installed)
+# ────────────────────────────────────────────────────────────────
+# STEP 1: Install Bun + Oracle Skills CLI
+# ────────────────────────────────────────────────────────────────
 curl -fsSL https://bun.sh/install | bash
-source ~/.bashrc  # or ~/.zshrc
-
-# Install oracle-skills-cli
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 bun install -g oracle-skills-cli
 
-# Install core skills
+# ────────────────────────────────────────────────────────────────
+# STEP 2: Learn from the Oracle Family
+# ────────────────────────────────────────────────────────────────
+gh issue view 6 --repo Soul-Brews-Studio/oracle-v2 --comments
+
+# ────────────────────────────────────────────────────────────────
+# STEP 3: Create GitHub repo + feature branch
+# ────────────────────────────────────────────────────────────────
+gh repo create $REPO_NAME --public --clone
+cd $REPO_NAME
+git checkout -b feat/oracle-birth
+
+# ────────────────────────────────────────────────────────────────
+# STEP 4: Create Brain Structure (ψ/)
+# ────────────────────────────────────────────────────────────────
+mkdir -p ψ/{inbox,memory/{resonance,learnings,retrospectives,logs},writing,lab,active,archive,outbox,learn}
+mkdir -p .claude/{agents,skills,hooks,docs}
+mkdir -p "ψ/memory/retrospectives/$(date '+%Y-%m')/$(date '+%d')"
+
+# ────────────────────────────────────────────────────────────────
+# STEP 5: Install Oracle Skills
+# ────────────────────────────────────────────────────────────────
 oracle-skills install rrr recap trace feel fyi forward standup where-we-are project
 
 # ============================================================
