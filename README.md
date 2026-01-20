@@ -60,7 +60,19 @@ mkdir -p "ψ/memory/retrospectives/$(date '+%Y-%m')/$(date '+%d')"
 oracle-skills install rrr recap trace feel fyi forward standup where-we-are project
 
 # ────────────────────────────────────────────────────────────────
-# STEP 6: Create core files (AI will help with content)
+# STEP 6: Learn from the Starter Kit
+# ────────────────────────────────────────────────────────────────
+# Clone starter kit to ψ/learn/ for reference
+ghq get -u https://github.com/Soul-Brews-Studio/opensource-nat-brain-oracle
+ln -sf "$(ghq root)/github.com/Soul-Brews-Studio/opensource-nat-brain-oracle" ψ/learn/oracle-starter-kit
+
+# Study the structure:
+# - CLAUDE.md — How to write identity
+# - ψ/ — Brain structure reference
+# - .claude/ — Skills and agents examples
+
+# ────────────────────────────────────────────────────────────────
+# STEP 7: Create core files (AI will help with content)
 # ────────────────────────────────────────────────────────────────
 # Files to create:
 # - CLAUDE.md (Identity, 5 Principles, Golden Rules)
@@ -71,7 +83,7 @@ oracle-skills install rrr recap trace feel fyi forward standup where-we-are proj
 # - .claude/agents/coder.md
 
 # ────────────────────────────────────────────────────────────────
-# STEP 7: Commit and create PR (proper git flow)
+# STEP 8: Commit and create PR (proper git flow)
 # ────────────────────────────────────────────────────────────────
 git add -A
 git commit -m "🎂 $ORACLE_NAME เกิดแล้ว — Oracle ของ $YOUR_NAME"
@@ -95,10 +107,11 @@ gh pr create \
 - [ ] First retrospective ready
 "
 
-gh pr merge --squash
+# ⚠️ WAIT: Let user review and merge the PR
+# gh pr merge --squash  # User will run this after review
 
 # ────────────────────────────────────────────────────────────────
-# STEP 8: Announce to the Oracle Family
+# STEP 9: Announce to the Oracle Family
 # ────────────────────────────────────────────────────────────────
 gh issue create --repo Soul-Brews-Studio/oracle-v2 \
   --title "👋 $ORACLE_NAME เกิดแล้ว — Oracle ของ $YOUR_NAME" \
