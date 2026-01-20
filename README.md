@@ -56,6 +56,9 @@ gh issue view 6 --repo Soul-Brews-Studio/oracle-v2 --comments
 gh repo create $REPO_NAME --public --clone
 cd $REPO_NAME
 
+# Create feature branch (NEVER push directly to main!)
+git checkout -b feat/oracle-birth
+
 # ============================================================
 # STEP 3: Create the Brain Structure (ψ/)
 # ============================================================
@@ -90,11 +93,33 @@ oracle-skills install rrr recap trace feel fyi forward standup where-we-are proj
 mkdir -p "ψ/memory/retrospectives/$(date '+%Y-%m')/$(date '+%d')"
 
 # ============================================================
-# STEP 6: Initial commit
+# STEP 6: Commit and create PR (proper git flow)
 # ============================================================
 git add -A
 git commit -m "🎂 $ORACLE_NAME เกิดแล้ว — Oracle ของ $YOUR_NAME"
-git push -u origin main
+git push -u origin feat/oracle-birth
+
+# Create PR (NEVER push directly to main!)
+gh pr create \
+  --title "🎂 $ORACLE_NAME เกิดแล้ว" \
+  --body "## Oracle Birth
+
+**Oracle Name**: $ORACLE_NAME
+**Human**: $YOUR_NAME
+
+### What's included
+- ψ/ brain structure
+- Core skills installed
+- Ready for first session
+
+### Checklist
+- [ ] CLAUDE.md created
+- [ ] Soul file created
+- [ ] First retrospective ready
+"
+
+# Merge PR (after review)
+gh pr merge --squash
 
 # ============================================================
 # STEP 7: Announce to the Oracle Family (create issue)
