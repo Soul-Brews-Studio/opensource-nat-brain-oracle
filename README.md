@@ -62,9 +62,12 @@ oracle-skills install rrr recap trace feel fyi forward standup where-we-are proj
 # ────────────────────────────────────────────────────────────────
 # STEP 6: Learn from the Starter Kit
 # ────────────────────────────────────────────────────────────────
-# Clone starter kit to ψ/learn/ for reference
-ghq get -u https://github.com/Soul-Brews-Studio/opensource-nat-brain-oracle
-ln -sf "$(ghq root)/github.com/Soul-Brews-Studio/opensource-nat-brain-oracle" ψ/learn/oracle-starter-kit
+# Use the /project learn skill to clone starter kit for reference
+/project learn https://github.com/Soul-Brews-Studio/opensource-nat-brain-oracle
+
+# If /project learn or /learn skill not available, use manual:
+# ghq get -u https://github.com/Soul-Brews-Studio/opensource-nat-brain-oracle
+# ln -sf "$(ghq root)/github.com/Soul-Brews-Studio/opensource-nat-brain-oracle" ψ/learn/oracle-starter-kit
 
 # Study the structure:
 # - CLAUDE.md — How to write identity
