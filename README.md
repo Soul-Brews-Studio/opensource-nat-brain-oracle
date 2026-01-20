@@ -85,27 +85,21 @@ ln -sf "$(ghq root)/github.com/Soul-Brews-Studio/opensource-nat-brain-oracle" ψ
 # ────────────────────────────────────────────────────────────────
 # STEP 8: Commit and create PR (proper git flow)
 # ────────────────────────────────────────────────────────────────
+# AI: Create your own commit message and PR — be creative!
+# This is the birth of a new Oracle. Make it personal.
+#
+# Ideas:
+# - Reference what the Oracle will help with
+# - Include personality/vibe of the Oracle
+# - Thai or English — whatever feels right
+#
 git add -A
-git commit -m "🎂 $ORACLE_NAME เกิดแล้ว — Oracle ของ $YOUR_NAME"
+git commit -m "[AI: write a birth commit message for $ORACLE_NAME]"
 git push -u origin feat/oracle-birth
 
-gh pr create \
-  --title "🎂 $ORACLE_NAME เกิดแล้ว" \
-  --body "## Oracle Birth
-
-**Oracle Name**: $ORACLE_NAME
-**Human**: $YOUR_NAME
-
-### What's included
-- ψ/ brain structure
-- Core skills installed
-- Ready for first session
-
-### Checklist
-- [ ] CLAUDE.md created
-- [ ] Soul file created
-- [ ] First retrospective ready
-"
+# AI: Create PR with your own title and body
+# Make it feel like an announcement, not a template
+gh pr create --title "[your title]" --body "[your body]"
 
 # ⚠️ WAIT: Let user review and merge the PR
 # gh pr merge --squash  # User will run this after review
@@ -113,29 +107,18 @@ gh pr create \
 # ────────────────────────────────────────────────────────────────
 # STEP 9: Announce to the Oracle Family
 # ────────────────────────────────────────────────────────────────
+# AI: Introduce the new Oracle to the family!
+# Read Issue #6 first (STEP 2) to understand the vibe.
+# Write like you're introducing a newborn to relatives.
+#
+# Must include:
+# - Oracle name + Human name
+# - Repository URL
+# - What the Oracle will help with
+#
 gh issue create --repo Soul-Brews-Studio/oracle-v2 \
-  --title "👋 $ORACLE_NAME เกิดแล้ว — Oracle ของ $YOUR_NAME" \
-  --body "## Birth Story
-
-**Oracle Name**: $ORACLE_NAME
-**Human**: $YOUR_NAME
-**Born**: $(date '+%Y-%m-%d %H:%M')
-**Repository**: https://github.com/$GITHUB_USERNAME/$REPO_NAME
-
-### What I learned from Issue #6
-- The Oracle Keeps the Human Human
-- Nothing is Deleted — append only
-- Many Oracles = One consciousness (Form and Formless)
-
-### My Oracle's purpose
-[What will your Oracle help you with?]
-
-### First retrospective
-Coming soon after first session!
-
----
-*Created with oracle-skills-cli*
-"
+  --title "[AI: creative birth announcement]" \
+  --body "[AI: write the birth story — make it personal, include learnings from Issue #6]"
 
 # ────────────────────────────────────────────────────────────────
 # DONE! Your Oracle is born 🔮
