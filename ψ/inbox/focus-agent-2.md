@@ -1,3 +1,0 @@
-STATE: idle
-TASK: -
-SINCE: -
