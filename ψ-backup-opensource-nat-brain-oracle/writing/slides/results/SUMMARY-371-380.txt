@@ -1,0 +1,126 @@
+ANTI-PATTERNS & WARNINGS: IMAGE PROMPTS 371-380
+Generated: 2025-12-24 17:45 GMT+7
+Status: Ready for generation
+File: prompts-371-380-anti-patterns.md (314 lines)
+
+================================================================================
+
+PROMPT 371: Over-Assumption Under Urgency
+Thai: ความเร็วสร้างจุดตาบอด (Speed Creates Blind Spots)
+Concept: Runner sprinting into cliff edge hidden by mist, cyan energy flows mask gold warning signs
+Visual: Monochrome + cyan urgency + gold cliff warning + silhouette + negative space
+Key Message: SPEED ≠ SEEING
+
+PROMPT 372: Context Confidence Override
+Thai: ความเชื่อมั่นบนบ้านทรายกลับ (Confidence Built on Shifting Sand)
+Concept: Figure standing confidently on dissolving cached context, cannot see ground beneath
+Visual: Monochrome + translucent layers + cyan seepage + false-solid appearance
+Key Message: CONTEXT ≠ PROPHECY
+
+PROMPT 373: Force Push Danger
+Thai: แรงบีบอาจทำลายกิ่ง (Force May Break the Branch)
+Concept: Destructive hammer crashes into tree branch, shattering extends through entire organism
+Visual: Ancient tree + violent cyan impact + gold fist + cascading fractures + tendrils
+Key Message: --FORCE OVERRIDES LOGIC
+
+PROMPT 374: Premature Abstraction
+Thai: อาคารก่อนมีฐาน (Building Before Foundation)
+Concept: Towering elegant structure on laughably small foundation, loses sight of basic need
+Visual: Perspective from below + gold complexity above + tiny base + simple need below
+Key Message: COMPLEXITY ≠ SOLUTION
+
+PROMPT 375: Subagent Not Always Needed
+Thai: เครื่องมือสำหรับทำงานเล็ก (Tool Overhead for Small Work)
+Concept: Tiny task surrounded by elaborate machinery + delegation overhead
+Visual: Nested boxes + gold infrastructure + cyan flows + 90% overhead, 10% work
+Key Message: OVERHEAD > WORK
+
+PROMPT 376: Silent Failure Hidden
+Thai: ความผิดพลาดที่ลับซ่อน (Hidden Errors Buried Deep)
+Concept: Dark stream with cyan errors redirected into void (2>/dev/null), peaceful surface above
+Visual: Murky underground + cyan toxic particles + drain pipe + peaceful surface contrast
+Key Message: SILENCE ≠ SAFETY
+
+PROMPT 377: Averaging Scores Blindness
+Thai: ค่าเฉลี่ยปิดสายตาแหลม (Average Closes Sharp Vision)
+Concept: Average line obscures high/low outliers in distribution, false certainty blinds
+Visual: Distribution bars + gold average line + ink clouds hiding extremes + cyan missed signals
+Key Message: MEAN HIDES EXTREMES
+
+PROMPT 378: Zombie Agent Problem
+Thai: ตัวแทนซอมบี้ที่ไม่จบ (Agents That Never Complete)
+Concept: Hollow agent suspended in limbo, endless timer, tangled incomplete tasks
+Visual: Pale humanoid + transparent body + gold hourglass + cyan threads + other figures
+Key Message: STARTED ≠ FINISHED
+
+PROMPT 379: Merge Conflict Chaos
+Thai: สาขาที่ขัดแย้งซ้อน (Conflicting Branches Collide)
+Concept: Multiple branches converge in violent collision, parallel edits incompatible
+Visual: Organic branches converging + cyan/gold explosion + tangled lines + mangled result
+Key Message: PARALLEL ≠ COMPATIBLE
+
+PROMPT 380: Rate Limit Crash
+Thai: ความเหนื่อยล้ากระหน่ำ (Exhaustion From Relentless Requests)
+Concept: Container overflowing with relentless cyan API requests, system shatters
+Visual: Vessel filling + cyan energy streams + gold capacity limits + inevitable crash
+Key Message: DEMAND > CAPACITY
+
+================================================================================
+
+VISUAL CONSISTENCY ACROSS 371-380:
+- Monochrome ink-wash foundation (timeless, universal)
+- Cyan energy/flow (representing danger signals, speed, chaos)
+- Gold decision points/warnings/completion (visibility of consequences)
+- 16:9 aspect ratio (presentation/gallery standard)
+- Thai + English bilingual text (accessible to both audiences)
+- Dark, cautionary emotional tone (warnings, not celebrations)
+
+NARRATIVE PROGRESSION:
+1. Decision-making failures (371-373): Speed → False context → Force
+2. Design anti-patterns (374-375): Complexity → Overhead
+3. Hidden consequences (376-377): Silence → Averaging
+4. System breakdown (378-380): Incompletion → Conflict → Exhaustion
+
+THEMATIC CATEGORIES:
+- Urgency & Cognition (371, 372): How speed and confidence fail
+- Architecture & Delegation (373, 374, 375): Wrong scale/force/tools
+- Visibility & Signals (376, 377): What we don't see
+- Completion & Scale (378, 379, 380): Breaking points in systems
+
+================================================================================
+
+GENERATION NOTES:
+
+1. Style reference: Use existing 264-268 images as style guide (ink-wash + cyan + gold)
+2. Tool recommendation: DALL-E 3 for text accuracy, Midjourney for organic quality
+3. Aspect ratio: Ensure 16:9 (1920x1080, 3840x2160, or equivalent)
+4. Output: PNG format, high resolution (2K or 4K recommended)
+5. Text rendering: Use Noto Sans Thai, Prompt, Kanit, or Sarabun fonts
+
+FILE NAMING (after generation):
+- 371-over-assumption-under-urgency.png
+- 372-context-confidence-override.png
+- 373-force-push-danger.png
+- 374-premature-abstraction.png
+- 375-subagent-not-always-needed.png
+- 376-silent-failure-hidden.png
+- 377-averaging-scores-blindness.png
+- 378-zombie-agent-problem.png
+- 379-merge-conflict-chaos.png
+- 380-rate-limit-crash.png
+
+SAVE LOCATION:
+/Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/slides/results/
+
+================================================================================
+
+INTEGRATION NEXT STEPS:
+
+1. Generate images using DALL-E 3 or Midjourney with the detailed prompts
+2. Save as PNG in results/ directory with proper naming
+3. Update IMAGE-INDEX.md with new 371-380 entries
+4. Create ANTI-PATTERNS-COLLECTION.md linking all 10 images with narrative
+5. Optional: Create slide deck using 371-380 as "Do Not Do This" gallery
+6. Optional: Cross-reference with CLAUDE_safety.md and CLAUDE_lessons.md
+
+STATUS: READY FOR IMAGE GENERATION

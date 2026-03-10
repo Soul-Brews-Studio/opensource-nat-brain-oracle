@@ -1,0 +1,51 @@
+{
+  "project": "aiplanethub/openagi",
+  "source": "https://github.com/aiplanethub/openagi",
+  "local_path": "/Users/nat/Code/github.com/aiplanethub/openagi",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/SUMMARY.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/acknowledgment/special-mentions.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/README.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/admin.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/workers.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/action/README.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/action/tools.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/memory.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/planner.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/aiagent/README.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/aiagent/agent-configuration.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/llm.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/vectorstore/chromastorage.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/components/vectorstore/README.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/use-cases/jobsearch-agent.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/use-cases/market-agent.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/use-cases/github-agent.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/use-cases/movie-recommender-agent.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/use-cases/blog-writing-agent.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/getting-started/quickstart.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/getting-started/installation.md"
+,
+    "/Users/nat/Code/github.com/aiplanethub/openagi/docs/contact-us.md"
+  ]
+}

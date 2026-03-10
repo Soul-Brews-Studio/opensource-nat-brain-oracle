@@ -1,0 +1,19 @@
+{
+  "project": "github/spec-kit",
+  "source": "https://github.com/github/spec-kit",
+  "local_path": "/Users/nat/Code/github.com/github/spec-kit",
+  "scanned": "2026-01-08 07:16",
+  "files": [
+    "/Users/nat/Code/github.com/github/spec-kit/docs/local-development.md"
+,
+    "/Users/nat/Code/github.com/github/spec-kit/docs/quickstart.md"
+,
+    "/Users/nat/Code/github.com/github/spec-kit/docs/README.md"
+,
+    "/Users/nat/Code/github.com/github/spec-kit/docs/index.md"
+,
+    "/Users/nat/Code/github.com/github/spec-kit/docs/upgrade.md"
+,
+    "/Users/nat/Code/github.com/github/spec-kit/docs/installation.md"
+  ]
+}

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Local AI System - Mac Purchase Proposal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css">
+
+    <style>
+        :root {
+            --r-main-font: 'Sarabun', 'Inter', sans-serif;
+            --r-heading-font: 'Sarabun', 'Inter', sans-serif;
+            --r-main-color: #e6e6e6;
+            --r-heading-color: #00d9ff;
+            --r-background-color: #0d1117;
+        }
+
+        .reveal {
+            font-family: var(--r-main-font);
+            color: var(--r-main-color);
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            font-family: var(--r-heading-font);
+            color: var(--r-heading-color);
+            text-transform: none;
+        }
+
+        .reveal table {
+            font-size: 0.85em;
+            margin: 0.5em auto;
+        }
+
+        .reveal table th {
+            color: #00ff9f;
+            border-bottom: 2px solid #30363d;
+            padding: 0.4em 0.8em;
+        }
+
+        .reveal table td {
+            border-bottom: 1px solid #30363d;
+            padding: 0.4em 0.8em;
+        }
+
+        .highlight-cyan {
+            color: #00d9ff;
+        }
+
+        .highlight-green {
+            color: #00ff9f;
+        }
+
+        .highlight-yellow {
+            color: #ffd700;
+        }
+
+        .highlight-red {
+            color: #ff6b6b;
+        }
+
+        .big-text {
+            font-size: 1.5em;
+        }
+
+        .big-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #00ff9f;
+        }
+
+        .price-box {
+            background: #161b22;
+            border: 2px solid #00ff9f;
+            border-radius: 12px;
+            padding: 1em;
+            margin: 0.5em 0;
+        }
+
+        .formula-box {
+            background: #1a1a2e;
+            border: 2px solid #00d9ff;
+            border-radius: 12px;
+            padding: 1em;
+            margin: 0.5em 0;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .partner-box {
+            display: inline-block;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            margin: 0.3em;
+        }
+
+        .phase-box {
+            background: linear-gradient(135deg, #1a4d1a 0%, #0d1117 100%);
+            border: 2px solid #00ff9f;
+            border-radius: 12px;
+            padding: 1em;
+            margin: 0.5em 0;
+        }
+
+        .roi-item {
+            display: inline-block;
+            background: #161b22;
+            border: 1px solid #ffd700;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            margin: 0.3em;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 0.8em;
+        }
+
+        .small-text {
+            font-size: 0.7em;
+            color: #888;
+        }
+    </style>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Sarabun:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 1: Title -->
+            <section>
+                <h1>Local AI System</h1>
+                <h3>Mac Purchase Proposal</h3>
+                <p style="margin-top: 2em;">
+                    <span class="partner-box">UNISERV</span>
+                    <span class="partner-box">3E</span>
+                    <span class="partner-box">Nat</span>
+                </p>
+                <p class="subtitle">31 December 2025 | 14:00</p>
+            </section>
+
+            <!-- 2: Project Context -->
+            <section>
+                <h2>CMU AI Farm</h2>
+                <p class="subtitle">กทปส. Proposal</p>
+                <p style="font-size: 0.9em;">การพัฒนาระบบควบคุมอัจฉริยะด้วย LLM และ Control Agent<br>เพื่อการเกษตรแม่นยำ</p>
+                <table>
+                    <tr><td class="highlight-green">LLM</td><td>Local Language Model</td></tr>
+                    <tr><td class="highlight-cyan">Control Agent</td><td>Automated decision system</td></tr>
+                    <tr><td class="highlight-yellow">Edge AIoT</td><td>Field sensor nodes</td></tr>
+                    <tr><td class="highlight-green">Farm Agent</td><td>Voice/Chat assistant</td></tr>
+                </table>
+                <p class="small-text">Duration: 24 months | Pilot: Chiang Mai, Samut Sakhon, Yala</p>
+            </section>
+
+            <!-- 3: Hardware - Phase 1 -->
+            <section>
+                <h2>Phase 1: Hardware</h2>
+                <h3 class="highlight-green">MacBook Pro 16" M4 Pro/Max</h3>
+                <p style="color: #888;">Space Black</p>
+                <table>
+                    <tr><th>Spec</th><th>Detail</th></tr>
+                    <tr><td>Chip</td><td>M4 Pro / M4 Max</td></tr>
+                    <tr><td>Memory</td><td>Up to 128GB Unified</td></tr>
+                    <tr><td>Storage</td><td>Up to 8TB SSD</td></tr>
+                    <tr><td>Display</td><td>16" Liquid Retina XDR</td></tr>
+                </table>
+            </section>
+
+            <!-- 3b: Phase 1 Focus -->
+            <section>
+                <h2>Phase 1: Focus</h2>
+                <p class="big-text" style="margin-bottom: 0.5em;">พัฒนารวดเร็ว + Demo Ready</p>
+                <table>
+                    <tr>
+                        <td class="highlight-green">Portable</td>
+                        <td>ยกไปไหนมาไหนได้</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-cyan">Built-in Display</td>
+                        <td>Demo ได้ทันที ไม่ต้องพกจอ</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-yellow">Fast Development</td>
+                        <td>Prototype + Test รวดเร็ว</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-green">Field Ready</td>
+                        <td>ทดสอบที่ไซต์จริงได้</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 4: Why Mac -->
+            <section>
+                <h2>Why Mac?</h2>
+                <p class="big-text" style="margin-bottom: 0.5em;">Apple Silicon = Best for AI</p>
+                <table>
+                    <tr>
+                        <td class="highlight-green">Performance/Watt</td>
+                        <td>Best in class for ML</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-cyan">Unified Memory</td>
+                        <td>Load large models (Llama, Qwen)</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-yellow">Local</td>
+                        <td>Privacy, No cloud dependency</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-green">Portable</td>
+                        <td>Field testing at pilot sites</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 5: All Pricing (1 page) -->
+            <section>
+                <h2>ราคา</h2>
+                <table style="font-size: 0.8em; margin-bottom: 0.3em;">
+                    <tr>
+                        <td>ค่าเครื่อง <span class="small-text">(MacBook Pro 16" + AppleCare)</span></td>
+                        <td style="text-align: right;">฿276,800</td>
+                    </tr>
+                    <tr>
+                        <td>ค่าระบบ <span class="small-text">(Setup, Training, Support, ภาษี)</span></td>
+                        <td style="text-align: right;">฿221,440</td>
+                    </tr>
+                    <tr style="border-top: 2px solid #00ff9f;">
+                        <td><strong>Total</strong></td>
+                        <td class="highlight-green" style="text-align: right;"><strong>฿498,240</strong></td>
+                    </tr>
+                </table>
+                <p style="font-size: 0.9em; margin: 0.3em 0;">÷ 3 parties =</p>
+                <div>
+                    <span class="partner-box">UNISERV<br><span class="big-text highlight-green">฿166,080</span></span>
+                    <span class="partner-box">3E<br><span class="big-text highlight-green">฿166,080</span></span>
+                    <span class="partner-box">Nat<br><span class="big-text highlight-green">฿166,080</span></span>
+                </div>
+            </section>
+
+            <!-- 8: What's Included -->
+            <section>
+                <h2>What's Included</h2>
+                <table>
+                    <tr>
+                        <th>Hardware (฿276,800)</th>
+                        <th>ค่าระบบ (฿221,440)</th>
+                    </tr>
+                    <tr>
+                        <td>MacBook Pro 16" M4</td>
+                        <td>Local LLM installation</td>
+                    </tr>
+                    <tr>
+                        <td>AppleCare+ 3-year</td>
+                        <td>AI Farm dev environment</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>RAG system configuration</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Farm Agent prototype</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Training & documentation</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 9: Expected ROI -->
+            <section>
+                <h2>Expected ROI</h2>
+                <p class="subtitle">From AI Farm Project</p>
+                <div style="margin: 1em 0;">
+                    <span class="roi-item">Cost Reduction<br><span class="highlight-green big-text">15%</span></span>
+                    <span class="roi-item">Yield Increase<br><span class="highlight-green big-text">15-20%</span></span>
+                    <span class="roi-item">Cloud Savings<br><span class="highlight-green big-text">฿50k+/yr</span></span>
+                </div>
+                <p style="margin-top: 1em; font-size: 0.9em;">
+                    <span class="highlight-cyan">+ Data sovereignty</span> |
+                    <span class="highlight-cyan">No monthly API costs</span> |
+                    <span class="highlight-cyan">~10 pending projects</span>
+                </p>
+            </section>
+
+            <!-- 10: Payment Options -->
+            <section>
+                <h2>Payment Options</h2>
+                <table>
+                    <tr>
+                        <th>Option A</th>
+                        <th>Option B</th>
+                    </tr>
+                    <tr>
+                        <td class="highlight-green">One-time Payment</td>
+                        <td class="highlight-cyan">Installment (0%)</td>
+                    </tr>
+                    <tr>
+                        <td>฿166,080 per party</td>
+                        <td>฿27,680/month × 10</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="small-text">~฿16,608 per party/month</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 11: Phase 2 -->
+            <section>
+                <h2>Phase 2 (Future)</h2>
+                <p class="subtitle">Mac Studio M4 | Expected Q2-Q3 2025</p>
+                <table>
+                    <tr><th>Model</th><th>Price (current gen)</th></tr>
+                    <tr>
+                        <td>Mac Studio M2 Max</td>
+                        <td>~฿325,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mac Studio M3 Ultra</td>
+                        <td>~฿409,000</td>
+                    </tr>
+                </table>
+                <p style="margin-top: 1em;">
+                    <span class="highlight-cyan">เครื่องใหญ่ขึ้น แรงขึ้น</span><br>
+                    <span class="small-text">เชื่อมต่อกับ MacBook เพื่อเพิ่มความเร็ว</span>
+                </p>
+            </section>
+
+            <!-- 12: Timeline -->
+            <section>
+                <h2>Timeline</h2>
+                <table>
+                    <tr><th>Phase</th><th>When</th><th>Hardware</th><th>Focus</th></tr>
+                    <tr>
+                        <td class="highlight-green">Phase 1</td>
+                        <td>Now</td>
+                        <td>MacBook Pro 16"</td>
+                        <td>พัฒนา + Demo + พกพา</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-cyan">Phase 2</td>
+                        <td>Q2-Q3</td>
+                        <td>Mac Studio</td>
+                        <td>เพิ่มพลัง + เชื่อมต่อ</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 13: Summary -->
+            <section>
+                <h2>Summary</h2>
+                <div class="phase-box">
+                    <p class="big-text">Investment Request</p>
+                    <p class="big-number">฿166,080</p>
+                    <p>per party</p>
+                </div>
+                <p style="margin-top: 0.5em; font-size: 0.85em;">
+                    <span class="highlight-green">MacBook Pro 16"</span> |
+                    <span class="highlight-cyan">AI Farm Environment</span> |
+                    <span class="highlight-yellow">3-year Warranty</span>
+                </p>
+            </section>
+
+            <!-- 14: Supports -->
+            <section>
+                <h2>This Investment Supports</h2>
+                <p style="margin: 0.5em 0;">
+                    <span class="partner-box" style="border-color: #00ff9f;">CMU AI Farm<br><span class="small-text">กทปส. Proposal</span></span>
+                </p>
+                <p style="margin: 0.5em 0;">
+                    <span class="partner-box">~10 Local AI Projects<br><span class="small-text">Pending</span></span>
+                </p>
+                <p style="margin: 0.5em 0;">
+                    <span class="partner-box" style="border-color: #ffd700;">Local AI for Local Government<br><span class="small-text">Initiative</span></span>
+                </p>
+            </section>
+
+            <!-- 15: Thank You -->
+            <section>
+                <h1 class="highlight-green">Thank You</h1>
+                <p style="margin-top: 1em;">
+                    <strong>Nat</strong> (LarisLabs)<br>
+                    Meeting: 31 Dec 2025, 14:00
+                </p>
+                <p style="margin-top: 1em; font-size: 0.9em;">
+                    Project Lead: <span class="highlight-cyan">ศ.ปฏิบัติ ดร.เศรษฐ สัมภัตตะกุล</span>
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'none',
+            backgroundTransition: 'none',
+            slideNumber: true,
+            controls: true,
+            progress: true
+        });
+    </script>
+</body>
+
+</html>

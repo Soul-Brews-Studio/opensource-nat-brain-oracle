@@ -1,0 +1,12 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "active/context",
+  "attachmentFolderPath": ".attachments",
+  "showLineNumber": true,
+  "spellcheck": false,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false,
+  "showFrontmatter": true,
+  "readableLineLength": false
+}

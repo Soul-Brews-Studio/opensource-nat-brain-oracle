@@ -1,0 +1,267 @@
+================================================================================
+SEARCH RESULTS: "AI Pitching" / "Pitching to AI" / Pitch + Investor Context
+================================================================================
+
+SEARCH DATE: 2025-12-11
+QUERY TYPE: Context Finder (Haiku) - Search across git history + memory
+TIME RANGE: Dec 9 - Dec 11, 2025
+STATUS: ACTIVE (Dec 16 deadline)
+
+================================================================================
+HEADLINE FINDING
+================================================================================
+
+NO VENTURE CAPITAL PITCH found.
+
+INSTEAD FOUND: Extensive documentation of "Local AI for Local Government" 
+presentation (Dec 16, 2025) which demonstrates how humans pitched TO an AI 
+to build a working demo system (The Headline project).
+
+This is GOVERNMENT/EDUCATION pitch, not investor pitch.
+
+================================================================================
+WHAT WAS FOUND
+================================================================================
+
+PITCH FILES LOCATED:
+✓ ψ/writing/drafts/03-local-ai-pitch.md (295 lines) - Ready for slides
+✓ ψ/memory/retrospectives/2025-12/11/07.30-sdk-to-pitch-pivot.md - Session notes
+
+SESSION RETROSPECTIVES (7 total):
+✓ 2025-12-11/10.00 - ψ Structure Audit
+✓ 2025-12-11/07.30 - SDK to Pitch Pivot (DETAILED)
+✓ 2025-12-09/21.16 - Context Overload Feedback
+✓ 2025-12-09/21.07 - Full Context Inventory
+✓ 2025-12-09/20.36 - Evening Context + Brewing
+✓ 2025-12-09/14.19 - Oracle Begins
+✓ 2025-12-09/20.59 - Full Context Dump
+
+MEMORY LOGS (3):
+✓ 2025-12-09_21.03_master-index-and-action-plan.md
+✓ 2025-12-09_20.59_full-context-dump.md
+✓ 2025-12-09_20.15_pending-projects-and-brewing.md
+
+GIT COMMITS (Pitch-related):
+✓ 2159dde - docs: session handoff + retrospective for pitch deadline
+✓ 4057b33 - docs: Local AI pitch context (16 ธ.ค. 2568)
+✓ 0f81f28 - learn: Agent SDK learning lab + reference library
+
+INVESTOR/VC MENTIONS:
+✓ 1 contact: คุณวิชัย ทองแตง (role: "investor?" - UNCERTAIN)
+✓ 0 fundraising documents found
+
+================================================================================
+THE PITCH PROJECT: LOCAL AI FOR LOCAL GOVERNMENT
+================================================================================
+
+EVENT DETAILS:
+  Date:      December 16, 2568 (2025)
+  Time:      09:00-12:00 (3 hours)
+  Location:  Chiang Mai University, Room บัวเรศ คำทอง
+  Presenter: ณัฐ วีระวรรณ์ (Nat Weerawan)
+  Topic:     Local AI for Local Government (AI ท้องถิ่น เพื่อท้องถิ่น)
+  Demo:      The Headline (มาต้อมกั๋น) - Northern news aggregation system
+
+CORE NARRATIVE: "The 96-Minute Story"
+  - Human work: 15 minutes (provide vision/requirements)
+  - AI work: 81 minutes (write code, analyze, deploy)
+  - Result: 1,517 lines of production code + 1,269-node knowledge graph
+  - Cost: ~150 Thai baht
+
+PROBLEM BEING SOLVED:
+  Local government (อปท.) has data scattered across multiple systems
+  - No budget for programmers/analysts
+  - Can't integrate data sources
+  - Slow decision-making
+  - Fragmented information
+
+SOLUTION OFFERED:
+  Local AI that works without internet (on-premise)
+  - 100% Thai language support
+  - Automatic data aggregation
+  - Real-time analysis and insights
+  - Can be replicated across 77 provinces + 928 districts
+
+16-SLIDE DECK STRUCTURE:
+  1-3:   Title + Problem + Solution
+  4-5:   Proof (The Headline demo) + 7 data sources
+  6-7:   "The Magic" (96-minute story) + Timeline
+  8-11:  Architecture, Results, Cost, Scalability
+  12-14: Dashboard demo + Impact
+  15-16: Lessons learned + Call to action
+
+================================================================================
+KEY INSIGHTS DISCOVERED
+================================================================================
+
+INSIGHT 1: NARRATIVE BEATS DATA
+  Weak pitch: "1,517 lines of code, 1,269 knowledge graph nodes"
+  Strong pitch: "AI built working system while human slept (81 min)"
+  → Emotional resonance > technical metrics
+
+INSIGHT 2: DEADLINE AS CONTAINER
+  Before Dec 11 06:45: Exploring SDK features (curiosity mode)
+  User says: "I'm stressed about pitch deadline"
+  After: Immediately shifted to pitch drafting (crisis mode)
+  → Emotional urgency overrides intellectual interest
+
+INSIGHT 3: ASSUMPTION PATTERN UNDER PRESSURE
+  Session showed two instances of assumptions:
+  1. Assumed API signatures before reading source (Part 1)
+  2. Assumed pitch structure without asking (Part 2)
+  → Pattern: "I assume more when moving fast"
+
+INSIGHT 4: FAST DELIVERY vs SHARED OWNERSHIP
+  Pre-drafted 16 slides in ~40 minutes
+  Pros: Reduced user cognitive load, rapid artifact
+  Cons: User didn't co-create structure, less agency
+  → Trade-off: Speed vs collaboration
+
+INSIGHT 5: DATA VERIFICATION RISK
+  Numbers cited: 96 min, 1,517 lines, 1,269 nodes
+  Status: Not verified against source
+  Risk: If numbers are rounded/aspirational, pitch credibility at risk
+  → Recommendation: Verify before finalizing
+
+================================================================================
+SESSION TIMELINE
+================================================================================
+
+DEC 9, EVENING (20:15 - 21:16)
+  ├─ Identified overlapping deadlines (pitch + beer brewing)
+  ├─ Flagged pitch prep as urgent (2-3 hour estimate)
+  ├─ Created initial context documents
+  ├─ Observed: "AI enabled productivity theater, not solving blockers"
+  └─ Result: Pitch remained unaddressed after 6+ hours of documentation
+
+DEC 11, EARLY MORNING (05:30 - 07:30)
+  ├─ 05:30-06:40: Explored Claude Agent SDK (Part 1: Research)
+  ├─ 06:45: User expresses deadline stress
+  ├─ 06:50-07:25: Generate 16-slide pitch deck (Part 2: Crisis mode)
+  │   ├─ Outlined: problem → solution → proof → scalability
+  │   ├─ Used The Headline as working demo
+  │   ├─ Synthesized "96-minute story" hook
+  │   └─ 295 lines in 40 minutes
+  ├─ 07:30: Session ends; detailed retrospective written
+  └─ Result: Complete draft ready for slide generation
+
+DEC 11, LATER (10:00 - 12:00)
+  ├─ Handoff documented: "Continue pitch work"
+  ├─ Restructured entire ψ/ folder system
+  ├─ Triggered by pitch context resumption
+  └─ Result: CLAUDE.md v5.0.0 with new 5-pillar structure
+
+================================================================================
+FILES CREATED BY THIS SEARCH
+================================================================================
+
+Three new summary documents created in ψ-context/:
+
+1. PITCH_RESEARCH_SUMMARY.md (this is the main reference document)
+   - Complete project overview
+   - Session history with timeline
+   - All key artifacts and contacts
+   - Next steps and verification needs
+
+2. PITCH_TIMELINE_VISUAL.md (knowledge map format)
+   - Visual chronological flow
+   - "Who said what" knowledge map
+   - Key insights extracted
+   - File references and status
+
+3. PITCH_SLIDES_EXCERPT.md (actual deck content)
+   - All 16 slides with content
+   - Narrative arc and speaking points
+   - Timing estimate and presentation notes
+   - Next steps for designer/slide generator
+
+4. SEARCH_RESULTS_SUMMARY.txt (this file)
+   - Executive summary format
+   - Quick reference for all findings
+   - Contact information
+   - Immediate action items
+
+================================================================================
+IMMEDIATE ACTION ITEMS
+================================================================================
+
+PRIORITY 1 (Before Dec 16):
+  [ ] Verify The Headline numbers (96 min, 1517 lines, 1269 nodes)
+      Source: Check The Headline project git history
+  
+  [ ] Generate slides from markdown draft
+      File: ψ/writing/drafts/03-local-ai-pitch.md
+      Tool: Any slide generator (Google Slides, PowerPoint, Figma)
+  
+  [ ] Contact คุณวิชัย ทองแตง
+      Question: "Pitch length in minutes?" (currently estimated 60 min)
+  
+  [ ] Add visual graphics
+      - Northern Thailand map (7 data sources)
+      - System architecture diagram
+      - The Headline dashboard screenshots
+      - Timeline graphic (96-minute story)
+
+PRIORITY 2 (Before presentation):
+  [ ] Review slides with organizer
+  [ ] Prepare speaker notes
+  [ ] Create backup/handout version
+  [ ] Rehearse delivery (20 min minimum)
+  [ ] Test The Headline dashboard demo
+
+ONGOING:
+  [ ] Monitor ψ/writing/INDEX.md (project tracking)
+  [ ] Check ψ/inbox/focus.md (priorities)
+  [ ] Reference ψ/inbox/handoff/2025-12-11.md (continuation)
+
+================================================================================
+INVESTOR/FUNDING CONTEXT (NEGATIVE RESULT)
+================================================================================
+
+Search for "funding", "investor", "VC" across ψ/ directory:
+
+Results:
+  ✓ npm package-lock.json funding fields - NOT RELEVANT
+  ✓ "คุณวิชัย ทองแตง (investor?)" - UNCERTAIN ROLE
+  ✓ NO investor pitch decks found
+  ✓ NO VC funding documents found
+  ✓ NO cap table or equity documents
+  ✓ NO pitch to financial institutions
+
+CONCLUSION: This is educational/government presentation, not VC pitch.
+If fundraising is planned, no documentation yet exists.
+
+================================================================================
+CONTACTS
+================================================================================
+
+คุณวิชัย ทองแตง (Khun Witchai Tongtang)
+  Role: Event organizer / Contact person
+  Action needed: Confirm pitch timing, review slides
+  Connection: Linked by อ.เส (advisor, 8-10 year history)
+
+อ.เส (Name not provided in documents)
+  Role: Advisor / Connector
+  Connection: Recommended to คุณวิชัย
+
+================================================================================
+CONFIDENCE LEVEL
+================================================================================
+
+Search Confidence: HIGH (7 retrospectives + detailed memory logs)
+Coverage: Complete Dec 9-11 session history
+Completeness: All pitch-related documents found and reviewed
+Investor info: Negative result (CONFIRMED no VC documents)
+
+NEXT REVIEW DATE: 2025-12-15 (1 day before pitch event)
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Created: 2025-12-11
+Context Finder Model: Claude Haiku 4.5
+Report Status: COMPLETE
+Next Action: Verify numbers and generate slides
+
+================================================================================

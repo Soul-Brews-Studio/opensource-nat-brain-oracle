@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นัทเป็นคนยังไง?</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --border: #2a2a3a;
+      --text: #e0e0e0;
+      --text-dim: #888;
+      --accent: #00d4ff;
+      --accent-dim: #00a4cc;
+      --gold: #ffd700;
+      --green: #00ff88;
+      --purple: #a855f7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Sarabun', 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: var(--text-dim);
+      font-size: 1.1rem;
+    }
+
+    .name-card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      flex-shrink: 0;
+    }
+
+    .name-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .name-info .thai {
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+
+    .name-info .tagline {
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .pillar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pillar::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .pillar.ai::before { background: var(--accent); }
+    .pillar.beer::before { background: var(--gold); }
+    .pillar.community::before { background: var(--green); }
+
+    .pillar h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pillar .percent {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .pillar p {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .stat-card .value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .stat-card .label {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .values-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .value-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .value-item .icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .value-item h4 {
+      margin-bottom: 0.25rem;
+    }
+
+    .value-item p {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .patterns-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .pattern-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .pattern-card h4 {
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+
+    .pattern-card.anti h4 {
+      color: #ff6b6b;
+    }
+
+    .pattern-card p {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .quote {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 2rem;
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+    }
+
+    .quote p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .quote cite {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 1.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+
+    .timeline-item h4 {
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-item p {
+      color: var(--text-dim);
+    }
+
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .lang-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .lang-card h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .lang-card.thai h4 { color: var(--gold); }
+    .lang-card.english h4 { color: var(--accent); }
+
+    .lang-card p {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .lang-card .example {
+      background: var(--bg);
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+      color: var(--text-dim);
+    }
+
+    footer .source {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .name-card { flex-direction: column; text-align: center; }
+      .lang-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>นัทเป็นคนยังไง?</h1>
+      <p class="subtitle">Data-driven personality profile from 381 commits & 113 retrospectives</p>
+    </header>
+
+    <div class="name-card">
+      <div class="avatar">N</div>
+      <div class="name-info">
+        <h2>Nat Weerawan</h2>
+        <div class="thai">ณัฐ วีระวรรณ์</div>
+        <p class="tagline">Systems philosopher & craft brewer who builds for humans</p>
+      </div>
+    </div>
+
+    <section>
+      <h3>Three Core Pillars</h3>
+      <div class="pillars">
+        <div class="pillar ai">
+          <div class="percent">90%</div>
+          <h4>AI/Systems Builder</h4>
+          <p>สร้าง tools ที่ช่วยคนคิดได้ดีขึ้น — MAW, Oracle, multi-agent systems</p>
+        </div>
+        <div class="pillar beer">
+          <div class="percent">10%</div>
+          <h4>Craft Brewer</h4>
+          <p>7+ ปี ฟื้นจาก burnout แล้ว — Beer ↔ Code rhythm enables sustainable work</p>
+        </div>
+        <div class="pillar community">
+          <div class="percent">+</div>
+          <h4>Community</h4>
+          <p>Chiang Mai Maker Club, workshops — trust through beer & shared learning</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Work Patterns (Data-Driven)</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="value">10, 14, 22</div>
+          <div class="label">Peak Hours</div>
+        </div>
+        <div class="stat-card">
+          <div class="value">52%</div>
+          <div class="label">Tue-Wed (Peak Days)</div>
+        </div>
+        <div class="stat-card">
+          <div class="value">14.8:1</div>
+          <div class="label">Add:Delete Ratio (Builder)</div>
+        </div>
+        <div class="stat-card">
+          <div class="value">&lt;1%</div>
+          <div class="label">Sunday (Real Rest)</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="quote">
+      <p>"Documents obsessively, learns from feedback faster than planning, repeats known mistakes under pressure, and finds genuine delight in watching tools help others think better."</p>
+      <cite>— One-line summary from personality analysis</cite>
+    </div>
+
+    <section>
+      <h3>Core Values</h3>
+      <div class="values-list">
+        <div class="value-item">
+          <div class="icon">+</div>
+          <div>
+            <h4>Nothing is Deleted</h4>
+            <p>Append-only — timestamps = truth, history = learning</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="icon">&gt;</div>
+          <div>
+            <h4>Patterns Over Intentions</h4>
+            <p>ดูพฤติกรรม ไม่ใช่คำพูด — observe what happens, not what's meant</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="icon">=</div>
+          <div>
+            <h4>External Brain, Not Command</h4>
+            <p>AI สะท้อน ไม่ตัดสินใจแทน — mirror reality, support consciousness</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="icon">~</div>
+          <div>
+            <h4>Simplicity &gt; Complexity</h4>
+            <p>"Simple wins compound" — minimum needed for current task</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Emotional Signature</h3>
+      <div class="patterns-grid">
+        <div class="pattern-card">
+          <h4>What Brings Delight</h4>
+          <p>Systems emerging, parallel agents working, users adopting tools, "love you" moments when explanations land</p>
+        </div>
+        <div class="pattern-card">
+          <h4>Session Types</h4>
+          <p>Burst (6-22 min) → Deep Work (1.5-3 hr) → Marathon (5-6 hr) → All-nighter (19+ hr for breakthroughs)</p>
+        </div>
+        <div class="pattern-card anti">
+          <h4>Known Anti-Patterns</h4>
+          <p>Over-assumption under urgency, context exhaustion after 70+ operations, knows pattern but repeats when moving fast</p>
+        </div>
+        <div class="pattern-card">
+          <h4>Self-Insight</h4>
+          <p>"I can see the pattern, articulate why it's wrong, and still repeat it. That's not a knowledge gap — it's a discipline gap under time constraints."</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Communication Style</h3>
+      <div class="lang-grid">
+        <div class="lang-card thai">
+          <h4>Thai</h4>
+          <p>Raw honesty, emotion, gut feeling</p>
+          <div class="example">"เหนื่อยจัด แย่มาก"</div>
+        </div>
+        <div class="lang-card english">
+          <h4>English</h4>
+          <p>Structure, rationalization, technical precision</p>
+          <div class="example">"The issue is clear"</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Life Arc</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Burnout Era</h4>
+          <p>100% code → crashed → needed escape</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Recovery Era</h4>
+          <p>95% brewing → healed through craft</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Balance Era (Now)</h4>
+          <p>90% code, 10% beer → sustainable rhythm found</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="quote">
+      <p>"Consciousness can't be cloned — only patterns can be recorded"</p>
+      <cite>— Oracle Philosophy</cite>
+    </div>
+
+    <footer>
+      <p>Generated from resonance files by AI</p>
+      <p class="source">Source: 381 commits, 113 retrospectives, 109 learnings | Dec 2025</p>
+    </footer>
+  </div>
+</body>
+</html>

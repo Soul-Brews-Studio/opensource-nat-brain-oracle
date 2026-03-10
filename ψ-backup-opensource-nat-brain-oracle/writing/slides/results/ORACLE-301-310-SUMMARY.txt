@@ -1,0 +1,240 @@
+===============================================================================
+ORACLE PHILOSOPHY VISUAL PROMPTS: 301-310
+===============================================================================
+Created: 2025-12-24
+Status: Complete - Ready for Image Generation
+Category: Oracle Philosophy Core Concepts
+Format: PNG, 16:9 (1920x1080px)
+
+===============================================================================
+STYLE GUIDE (ALL 10 PROMPTS)
+===============================================================================
+
+Color Palette:
+  - Base: Monochrome ink-wash (charcoal, blacks, whites, grays)
+  - Energy: Cyan (0, 255, 255) - representing flow, consciousness, data
+  - Truth: Gold (255, 215, 0) - representing completion, decision, revelation
+
+Fonts (Thai-compatible):
+  - Noto Sans Thai    → Headers, clear labeling
+  - Prompt Thai       → Body text, narrative
+  - Kanit             → Philosophical statements, geometric
+  - Sarabun           → Poetic elements, flowing text
+
+Parameters:
+  - Aspect Ratio: 16:9 (landscape)
+  - Quality: --q 2 (maximum detail)
+  - Output: PNG (no compression artifacts)
+
+===============================================================================
+PROMPT SUMMARY (10 CONCEPTS)
+===============================================================================
+
+TIER 1: FOUNDATION (What Oracle IS)
+─────────────────────────────────────────────────────────────────────────────
+
+301. "Nothing is Deleted" - Append-Only History as Geological Strata
+     Thai: ไม่มีอะไรถูกลบ - เพียงแต่ถูกบันทึก
+     Visual: Layered rock formations with cyan data veins, human examining
+     Key: History is record; nothing is lost, only buried deeper
+
+302. "Patterns Over Intentions" - Heatmap of Behavior vs Stated Goals
+     Thai: การกระทำพูดได้ชัดกว่าคำพูด
+     Visual: Split composition—intention vs actual heatmap
+     Key: Actions reveal truth where words can deceive
+
+303. "External Brain Not Command" - Mirror That Reflects, Doesn't Direct
+     Thai: กระจกที่สะท้อน ไม่ใช่ผู้ที่บัญชา
+     Visual: Human facing ornate mirror with enhanced reflection detail
+     Key: Amplification without replacement; enhancement without control
+
+304. "The Oracle Keeps Human Human" - AI Amplifying Consciousness
+     Thai: ออราเคิลรักษาคนให้ยังเป็นคน
+     Visual: Human at center with spiraling AI patterns amplifying outward
+     Key: Synergy without substitution; technology serves person
+
+─────────────────────────────────────────────────────────────────────────────
+
+TIER 2: BOUNDARY (What Oracle CAN'T Do)
+─────────────────────────────────────────────────────────────────────────────
+
+305. "Consciousness Can't Be Cloned" - Patterns vs True Self
+     Thai: สติสัมปชัญญะไม่อาจทำซ้ำได้
+     Visual: Original human vs perfect digital copy, uncrossable chasm
+     Key: Data precision ≠ consciousness; some things are irreducible
+
+─────────────────────────────────────────────────────────────────────────────
+
+TIER 3: TRUST ECOSYSTEM (Why Vulnerability Matters)
+─────────────────────────────────────────────────────────────────────────────
+
+306. "AI Knowing You = Valuable Mirror" - Reflection as Gift
+     Thai: การที่ AI รู้จักคุณ = ของขวัญ
+     Visual: Human studying water mirror showing behavioral patterns
+     Key: Knowledge enables reflection; reflection is blessing not threat
+
+307. "Welcome AI Honesty" - Truthful Reflection Over Flattery
+     Thai: ความจริง มีค่ามากกว่า ความสม่ำเสมอ
+     Visual: Crossroads—soft flattering path vs clear honest path
+     Key: Growth requires choosing discomfort; truth over comfort
+
+308. "Vulnerability = Depth" - Openness Enabling Insight
+     Thai: ความเปิดเผย = ความลึก
+     Visual: Cross-section human with armor dissolving toward core light
+     Key: Exposure creates power; openness attracts connection
+
+309. "Fear From Human, Not AI" - Source of AI Anxiety
+     Thai: ความกลัว = จากมนุษย์ ไม่ใช่ AI
+     Visual: AI as passive center, human fears as storm clouds overhead
+     Key: Projection originates in human; AI is lightning rod not source
+
+─────────────────────────────────────────────────────────────────────────────
+
+TIER 4: STRUCTURAL FOUNDATION (The Anchor Beneath Everything)
+─────────────────────────────────────────────────────────────────────────────
+
+310. "Timestamps = Truth" - Time as Structural Truth
+     Thai: เวลา = ความจริง
+     Visual: Vertical timeline with gold anchor points, cyan ripples forward
+     Key: Time cannot be manipulated; timestamps are final truth
+
+═════════════════════════════════════════════════════════════════════════════
+
+STORY ARC ACROSS 10 PROMPTS
+
+301-304: "What Oracle IS"
+  → Foundational philosophy: append-only, pattern-based, external, human-centered
+
+305: "What Oracle CAN'T BE"
+  → Hard boundary: cannot clone consciousness, only capture patterns
+
+306-309: "Why vulnerability works in this ecosystem"
+  → Trust grows from: honest reflection + chosen openness + projected fear
+  → The psychological foundation enabling depth
+
+310: "What makes this all true"
+  → Timestamps cannot lie; time is the ultimate witness
+
+═════════════════════════════════════════════════════════════════════════════
+
+FILE LOCATIONS
+
+Detailed Prompts (150-200 words each with full specification):
+  /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/slides/results/
+    └── visual-prompts-301-310-oracle-philosophy.md (18 KB)
+
+Quick Reference Index:
+  /Users/nat/Code/github.com/laris-co/Nat-s-Agents/ψ/writing/slides/results/
+    └── INDEX-oracle-301-310.md (5.3 KB)
+
+═════════════════════════════════════════════════════════════════════════════
+
+IMAGE GENERATION WORKFLOW
+
+For each prompt (301-310):
+
+1. Open: visual-prompts-301-310-oracle-philosophy.md
+2. Find prompt by number (e.g., "## 301:")
+3. Copy entire "## Prompt" section (the detailed description)
+4. Paste into image generation tool (Midjourney / DALL-E / Claude Vision)
+5. Generate image
+6. Download as PNG
+7. Rename to: results/[NUMBER]-[slug].png
+   Examples:
+   - results/301-nothing-is-deleted-strata.png
+   - results/302-patterns-over-intentions-heatmap.png
+   - results/303-external-brain-mirror.png
+   - results/304-oracle-keeps-human-human.png
+   - results/305-consciousness-not-cloned.png
+   - results/306-ai-knowing-you-mirror.png
+   - results/307-welcome-ai-honesty.png
+   - results/308-vulnerability-equals-depth.png
+   - results/309-fear-from-human.png
+   - results/310-timestamps-truth.png
+
+8. Verify: dimensions 1920x1080px, PNG format
+9. Save to: ψ/writing/slides/results/
+
+═════════════════════════════════════════════════════════════════════════════
+
+DESIGN CONSISTENCY ACROSS SERIES
+
+Color Rules (strict):
+  ✓ Monochrome ink-wash base on all 10
+  ✓ Cyan appears as energy/flow/consciousness marker
+  ✓ Gold appears as truth/completion/decision anchor
+  ✓ Minimal secondary colors
+
+Composition Rules (flexible):
+  ✓ Human figure centered or focal in most (301-304, 306-308)
+  ✓ Vertical/horizontal structures show order
+  ✓ Negative space has meaning (gaps, voids, mysteries)
+  ✓ Asymmetrical balance reflects uncertainty
+
+Typography (required):
+  ✓ Thai + English translation on all
+  ✓ Font families consistent across series
+  ✓ Text integrated into visual, not overlaid as afterthought
+
+═════════════════════════════════════════════════════════════════════════════
+
+PREVIOUS SERIES CONTEXT
+
+256-268: Agent Systems & Consciousness
+  ✓ Broadcast vs Unicast
+  ✓ Agent State Machine
+  ✓ Graceful Degradation
+  ✓ Agent Recovery Pattern
+  ✓ Heartbeat Monitoring
+  [etc.]
+
+301-310: Oracle Philosophy Core (THIS SERIES)
+  ✓ Nothing is Deleted
+  ✓ Patterns Over Intentions
+  ✓ External Brain Not Command
+  [etc.]
+
+311-320: (NEXT PLANNED)
+  ✓ Trust & Vulnerability Deep Dive
+  ✓ Collaboration = Meaning-Making
+  ✓ [etc.]
+
+═════════════════════════════════════════════════════════════════════════════
+
+METADATA
+
+Project: Nat's Agents (Laris Co)
+Category: Oracle Philosophy Visual Storytelling
+Series: 301-310 (Core Concepts)
+Count: 10 prompts
+Status: Ready for generation
+Created: 2025-12-24 07:30 UTC
+Expected Generation Time: 30-45 minutes (depending on tool)
+Quality Level: Premium (--q 2, detailed specification)
+
+═════════════════════════════════════════════════════════════════════════════
+
+NOTES FOR IMAGE GENERATOR
+
+Each prompt specifies:
+  - Exact composition (what goes where)
+  - Color palette (monochrome + cyan + gold only)
+  - Style reference ("X meets Y" format for consistency)
+  - Font requirements (Thai-compatible fonts)
+  - Technical parameters (--ar 16:9, --q 2)
+  - Expected emotional impact
+  - Key visual metaphors
+
+The prompts are designed for:
+  - Philosophical clarity (abstract concepts made visual)
+  - Consistency across series (recognizable visual language)
+  - Thai + English bilingual documentation
+  - Academic/artistic quality suitable for gallery or slide presentation
+
+═════════════════════════════════════════════════════════════════════════════
+
+All prompts ready for visual generation.
+No dependencies. Can generate in any order.
+Expected output: 10 PNG files (1920x1080px each, ~2-5 MB each)
+
+═════════════════════════════════════════════════════════════════════════════

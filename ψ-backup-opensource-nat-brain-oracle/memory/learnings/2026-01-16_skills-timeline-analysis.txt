@@ -1,0 +1,471 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    SKILLS TIMELINE & ARCHITECTURE ANALYSIS                    ║
+║                      Nat's Agents Repository (Jan 11-15, 2026)                ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+EXECUTIVE SUMMARY
+═════════════════════════════════════════════════════════════════════════════════
+
+Skills system underwent dramatic transformation in 5-day cycle:
+  Jan 11: Archive all → Restore all (2-hour intensive sprint)
+  Jan 12-13: Stabilization & enhancements (bug fixes, feature parity)
+  Jan 14-15: Architecture migration (local → global symlinks)
+
+Current status: MIGRATION IN PROGRESS
+  Old approach: Local skills in .claude/ (still functional)
+  New approach: Global oracle-proof-of-concept-skills via symlinks (starting)
+  Risk level: MODERATE (merge conflicts resolved, templates being standardized)
+
+
+═════════════════════════════════════════════════════════════════════════════════
+PHASE BREAKDOWN
+═════════════════════════════════════════════════════════════════════════════════
+
+PHASE 1: ARCHIVE & DISCOVERY (Jan 11, ~21:00-21:40)
+───────────────────────────────────────────────────────
+Commit 33c0d7bb | Archive user-skills to project (git tracked)
+  → Moved skills from ephemeral location to version-controlled repo
+  REASON: Need for reproducibility and history tracking
+
+Commit 06ccfa9f | Archive ALL skills to _archive/
+  → Complete consolidation into single archive location
+  IMPACT: All skills temporarily inaccessible from normal paths
+
+
+PHASE 2: INTENSIVE RESTORATION (Jan 11, 21:40-22:53 | ~1.3 HOURS)
+───────────────────────────────────────────────────────────────────
+SEQUENCE (in order of restoration):
+
+1. Core skills (21:44) | f0998a19
+   Restored: trace, rrr, recap, learn
+   Reason: Foundation for system operation
+
+2. Project-manager → project (21:48-21:52) | e8a30df5, 81ad00b6
+   Full recovery + rename to align with /project code
+   Impact: Critical for repo management workflows
+
+3. Context-finder (21:58) | 9d35cf62
+   Restored + integrated trace/search
+   Impact: Re-enabled AI discovery of codebase context
+
+4. Where-we-are merge (22:01) | 4f19a60f
+   Consolidated /now + /where-we-are into single skill
+   Dedup effort: Reduces redundant status reporting
+
+5. Trace-oracle (22:06) | 89e079fb
+   Restored oracle integration for tracing
+
+6. Forward (22:22) | 5b64e7e9
+   Handoff skill restored
+
+7. Feel (22:34) | 1be82272
+   Structured sentiment/mood capture
+
+8. Fyi + standup + schedule (22:44) | 49b65b1c
+   Three communication skills in one commit
+
+9. Retrospective (22:53) | ce0d0b5e
+   Documentation of "Skills restoration + Seeking Signal"
+
+KEY INSIGHT: Restoration prioritized by criticality:
+  1. Core operational skills first (trace, recap, learn)
+  2. User-facing commands next (feel, fyi, forward)
+  3. Communication skills last (standup, schedule)
+
+
+PHASE 3: ACTIVE DEVELOPMENT & STABILIZATION (Jan 12-13)
+─────────────────────────────────────────────────────────
+
+Jan 12 | 07:47 | bce7432a
+  /learn skill now auto-clones URLs via /project learn script
+  → Integration between skills, less manual setup
+
+Jan 12 | 09:20 | 62ed9c0f
+  /draft skill debut + dual voice blog + /fyi significance levels
+  NEW FEATURE: Significance levels allow prioritization
+
+Jan 12 | 13:58 | 2dbe410a
+  Retrospective: /watch skill + browser extension v1.7.0
+  NOTE: Tight coupling with browser extension
+
+Jan 12 | 16:35 | 9a4c6ea3 (BUG FIX)
+  /fyi skill bash parsing errors
+  ERROR TYPE: Shell metacharacter handling
+
+Jan 12 | 19:26 | 0f556266
+  ESPHome GPS/LoRa + /tmux + /oracle skills added
+  PLATFORM: Hardware integration skills
+
+Jan 13 | 00:56 | 9ed23507 (LARGE)
+  /recap v5.2 (484 lines) + /course skill (353 lines)
+  IMPACT: Restored massive retrospective capability
+
+Jan 13 | 06:15 | cc92aec8 (BUG FIX)
+  /schedule skill date format bug
+  PATTERN: Multiple date handling issues in this skill
+
+Jan 13 | 07:42 | e1f74f97
+  Retrospective: skill refactor progressive disclosure
+  LESSON: How to gracefully introduce skill changes
+
+Jan 13 | 08:10 | 979d9b73
+  /schedule skill + DuckDB three patterns + book
+  ENHANCEMENT: Added structured query patterns
+
+Jan 13 | 08:20 | 4f902bd4
+  /md skill new feature: query markdown with DuckDB
+  NEW SKILL: Replaces grep-based markdown search
+
+
+PHASE 4: ARCHITECTURE MIGRATION & SYMLINK TRANSITION (Jan 13-14)
+────────────────────────────────────────────────────────────────
+
+Jan 13 | 10:50 | 5a939010 (LEARNING)
+  Retrospective: plugin-skill-discovery-symlink-workaround
+  PROBLEM: Skills not discoverable by plugin system
+  WORKAROUND: Manual symlink pattern documented
+
+Jan 13 | 11:17 | 9b77583d
+  Documentation: oracle-skills symlink install pattern
+  PATTERN: How to link external skills into repo
+
+Jan 13 | 18:35 | 2d785302
+  /watch skill MQTT workflow documented
+  ARCHITECTURE: Watch → MQTT → Oracle integration
+
+Jan 14 | 20:17 | 65edfcc6 (CRITICAL ARCHITECTURE DOC)
+  Added SKILL-SYMLINKS.md + learning for git-tracked skills
+  LOCATION: /Users/nat/.../docs/SKILL-SYMLINKS.md
+  PURPOSE: Document migration strategy from local to global
+
+Jan 14 | 20:33 | 932c51c8 (MAJOR REFACTOR)
+  "Deprecate local skills - use global oracle-proof-of-concept-skills"
+  DECISION: Local skills are EOL candidate
+  TARGET REPO: oracle-proof-of-concept-skills (external)
+  STATUS: Deprecation announcement (not yet removed)
+
+Jan 14 | 20:49 | 7ca4fcc1 (LESSON LEARNED)
+  Retrospective: skill-symlink-single-source-of-truth
+  KEY INSIGHT: One source of truth needed for symlink architecture
+
+
+PHASE 5: CONFLICT RESOLUTION & TEMPLATE STANDARDIZATION (Jan 14-15)
+──────────────────────────────────────────────────────────────────
+
+Jan 14 | 23:57 | 2b7d5ced
+  Session artifacts: skills, labs, CLAUDE.md updates
+  MAINTENANCE: General housekeeping
+
+Jan 15 | 00:21 | 1ef23670 (MERGE CONFLICT)
+  Resolved skill deprecation conflicts
+  CHOICE: Accept main (non-deprecation version)
+  IMPLICATION: Local skills still live, for now
+
+Jan 15 | 09:02 | 8f550bff (LEARNING)
+  "Skill templates must be explicit"
+  DISCOVERY: Template inconsistencies found
+  SOLUTION: Standardize YAML frontmatter
+
+Jan 15 | 09:10 | 1894bbe9 (RETROSPECTIVE)
+  retro-header-fix-skill-template + lesson learned
+  FIX: Corrected skill template headers
+
+Jan 15 | 18:58 | 5ffe3be1 (HANDOFF)
+  hours-skill-plugin-trace + learnings
+  SCOPE: Analyzing skill ecosystem complexity
+
+Jan 15 | 19:00 | 769760aa (ONGOING RESEARCH)
+  rrr: hours-skill-plugin-ecosystem-trace
+  INVESTIGATION: How skills, plugins, and hours interact
+
+
+═════════════════════════════════════════════════════════════════════════════════
+HIGH-IMPACT SKILLS (BY MODIFICATION FREQUENCY)
+═════════════════════════════════════════════════════════════════════════════════
+
+TIER 1 (Most Complex)
+─────────────────────
+/schedule
+  - Date format bugs (Jan 13 06:15)
+  - DuckDB integration (Jan 13 08:10)
+  - Multiple architectural revisions
+  STATUS: High maintenance, feature-rich
+
+/recap
+  - Large file (484 lines)
+  - Progressive disclosure pattern
+  - Session retrospectives
+  STATUS: Core system component
+
+/fyi
+  - Bash parsing errors (Jan 12 16:35)
+  - Significance levels added (Jan 12 09:20)
+  - Multiple revisions in 5 days
+  STATUS: Good features, needs hardening
+
+/watch
+  - MQTT integration (Jan 13 18:35)
+  - Browser extension coupling (Jan 12 13:58)
+  - Real-time monitoring
+  STATUS: Modern architecture, tight coupling risk
+
+TIER 2 (Stabilized)
+───────────────────
+/learn
+  - URL auto-clone (Jan 12 07:47)
+  - /project integration
+  STATUS: Well-defined, functional
+
+/trace
+  - Core restoration (Jan 11 21:44)
+  - Oracle integration
+  STATUS: Stable
+
+TIER 3 (Newer)
+──────────────
+/md
+  - DuckDB markdown query (Jan 13 08:20)
+  - Replaces grep-based search
+  STATUS: New feature, potential
+
+/course
+  - New skill (Jan 13 00:56)
+  - Curriculum design
+  STATUS: Under exploration
+
+/draft
+  - New skill (Jan 12 09:20)
+  - Dual voice blog capability
+  STATUS: Novel feature
+
+TIER 4 (Merged/Consolidated)
+────────────────────────────
+/where-we-are
+  - Merged with /now (Jan 11 22:01)
+  - Status reporting
+  STATUS: Consolidated
+
+
+═════════════════════════════════════════════════════════════════════════════════
+ARCHITECTURE DECISIONS & LESSONS LEARNED
+═════════════════════════════════════════════════════════════════════════════════
+
+DECISION 1: Archive → Restore Cycle (Jan 11)
+─────────────────────────────────────────────
+WHY: Needed to clean up and reorganize skill infrastructure
+HOW: Mass archive, then selective restoration
+RESULT: Successful recovery in 2 hours
+LESSON: Skills can be quickly restored if properly documented
+
+DECISION 2: Skill Symlink Architecture (Jan 13-14)
+───────────────────────────────────────────────────
+WHY: Need for central skill management across multiple repos
+HOW: Move skills to oracle-proof-of-concept-skills, symlink locally
+WHEN: Announced Jan 14 20:33 (932c51c8)
+RISK: Merge conflict on Jan 15 00:21 (resolved by choosing main)
+LESSON: Symlink migration needs clear communication + conflict resolution
+
+DECISION 3: Template Standardization (Jan 15)
+──────────────────────────────────────────────
+WHY: Skills had inconsistent YAML frontmatter
+HOW: Discovered via plugin discovery failures
+FIX: Made templates explicit with proper headers
+IMPACT: Prevents future parsing errors
+
+KEY PATTERNS IDENTIFIED
+───────────────────────
+1. Progressive Disclosure
+   - Skills introduced gradually
+   - Each iteration adds features
+   - Users adapt to changes over time
+
+2. Tight Coupling Risk
+   - /watch coupled to browser extension
+   - /learn coupled to /project skill
+   - Needs cleaner separation of concerns
+
+3. DuckDB as Query Engine
+   - Replaces grep-based approaches
+   - Used in /schedule, /md
+   - Emerging pattern for structured queries
+
+4. Symlink Complexity
+   - Plugin discovery depends on symlinks
+   - YAML parsing depends on frontmatter
+   - Need for clear migration path
+
+5. Merge Conflict Pattern
+   - Deprecation decisions cause conflicts
+   - Solution: Take non-deprecation version
+   - Implication: Slower deprecation needed
+
+
+═════════════════════════════════════════════════════════════════════════════════
+CURRENT STATE SNAPSHOT (Jan 15, 19:00)
+═════════════════════════════════════════════════════════════════════════════════
+
+ACTIVE SKILLS (12 total, all in .claude/)
+──────────────────────────────────────────
+✓ context-finder     - Search git/issues
+✓ feel               - Mood tracking
+✓ forward            - Handoff documentation
+✓ fyi                - Info sharing with levels
+✓ learn              - Study repo cloning
+✓ project            - Repo management
+✓ recap              - Session documentation
+✓ schedule           - Calendar DuckDB queries
+✓ standup            - Daily standups
+✓ trace              - Oracle tracing
+✓ watch              - MQTT monitoring
+✓ where-we-are       - Status reporting
+
+DEPRECATED/CANDIDATE FOR REMOVAL
+─────────────────────────────────
+! All 12 above (announced as candidates for symlink migration)
+  - Local copies still functional
+  - Symlink migration not yet started
+  - No removal timeline announced
+
+TRANSITION STATE
+────────────────
+Architecture: Hybrid (local + global symlink planning)
+Documentation: SKILL-SYMLINKS.md exists (design doc)
+Conflicts: Resolved (main version preserved)
+Templates: Being standardized (as of Jan 15)
+Testing: Symlink discovery needs validation
+
+
+═════════════════════════════════════════════════════════════════════════════════
+RISKS & CONCERNS
+═════════════════════════════════════════════════════════════════════════════════
+
+RISK 1: Symlink Migration Paralysis
+─────────────────────────────────────
+Current: Announced (932c51c8) but not started
+Danger: Stuck in hybrid state indefinitely
+Timeline: Announced Jan 14, no completion date
+
+RISK 2: Merge Conflicts During Migration
+──────────────────────────────────────────
+Event: Conflict on Jan 15 00:21 (1ef23670)
+Lesson: Deprecation conflicts need clear resolution
+Impact: May delay migration timeline
+
+RISK 3: Tight Coupling
+──────────────────────
+Examples: /watch → browser extension, /learn → /project
+Impact: Harder to migrate to global symlinks
+Fix needed: Decouple skills before migration
+
+RISK 4: Template Inconsistency
+───────────────────────────────
+Discovery: Jan 15 8f550bff ("templates must be explicit")
+Impact: Plugin system can't discover improperly formatted skills
+Mitigation: In progress (1894bbe9)
+
+RISK 5: Plugin Ecosystem Complexity
+────────────────────────────────────
+Investigation: Ongoing (769760aa, 5ffe3be1)
+Questions: How do plugins discover skills? How do symlinks work?
+Impact: Migration may require plugin system updates
+
+
+═════════════════════════════════════════════════════════════════════════════════
+RECOMMENDATIONS
+═════════════════════════════════════════════════════════════════════════════════
+
+1. COMPLETE TEMPLATE STANDARDIZATION
+   Timeline: By Jan 17
+   Action: Audit all 12 skills for consistent YAML frontmatter
+   Owner: Template working group
+   Verification: Run skill discovery test on each
+
+2. VALIDATE SYMLINK ARCHITECTURE
+   Timeline: Before migration
+   Action: Test oracle-proof-of-concept-skills symlinks in test env
+   Owner: Architecture team
+   Validation: Confirm all 12 skills discoverable + functional
+
+3. DECOUPLE TIGHT DEPENDENCIES
+   Timeline: Parallel with #2
+   Action: /watch ← remove direct browser extension dependency
+           /learn ← make /project integration optional
+   Owner: Skill maintainers
+
+4. CLEAR MIGRATION TIMELINE
+   Timeline: By Jan 16
+   Action: Publish deprecation schedule for local skills
+           Example: "Full symlink migration by Jan 31"
+   Owner: Project lead
+   Communication: Update CLAUDE.md, create GitHub issue
+
+5. ESTABLISH ROLLBACK PLAN
+   Timeline: Before migration
+   Action: Document how to revert to local skills if symlink fails
+           Keep archived versions available
+   Owner: Infrastructure team
+
+
+═════════════════════════════════════════════════════════════════════════════════
+ARCHIVE LOCATION
+═════════════════════════════════════════════════════════════════════════════════
+
+Path: /Users/nat/.../Nat-s-Agents/.claude/_archive
+Contents: Previous versions of skills (used for restoration on Jan 11)
+Status: Still available for reference
+Purpose: Fallback if current skills have critical issues
+
+
+═════════════════════════════════════════════════════════════════════════════════
+FILES TO REVIEW
+═════════════════════════════════════════════════════════════════════════════════
+
+1. .claude/docs/SKILL-SYMLINKS.md
+   → Architecture design doc for symlink migration
+   Size: Unknown (created Jan 14)
+
+2. Commit 932c51c8
+   → "Deprecate local skills - use global oracle-proof-of-concept-skills"
+   → Shows what was deprecated
+
+3. Commit 7ca4fcc1
+   → Retrospective on skill-symlink single source of truth
+   → Lessons learned from symlink pattern
+
+4. Commit 8f550bff
+   → Learning: "Skill templates must be explicit"
+   → Template standardization details
+
+5. .claude/ directory
+   → Current 12 active skills (all subdirectories with CLAUDE.md)
+
+
+═════════════════════════════════════════════════════════════════════════════════
+CONCLUSION
+═════════════════════════════════════════════════════════════════════════════════
+
+The skills system experienced a successful recovery cycle (Jan 11) followed by
+a major architectural decision to migrate to a global symlink-based model (Jan 14).
+
+CURRENT HEALTH: AMBER (Stable but transitioning)
+  ✓ All 12 skills restored and functional
+  ✓ Active development ongoing
+  ✓ Template standardization in progress
+  ✗ Migration timeline unclear
+  ✗ Symlink testing not yet started
+  ✗ Tight coupling unresolved
+
+NEXT CRITICAL STEPS:
+  1. Complete template standardization (by Jan 17)
+  2. Start symlink migration testing (immediately)
+  3. Announce clear timeline for full migration (by Jan 16)
+  4. Resolve tight dependencies before cutover
+  5. Establish rollback procedures
+
+HISTORICAL NOTE:
+  The 5-day cycle (Archive → Restore → Stabilize → Migrate) shows the team's
+  ability to quickly reorganize and recover from large-scale changes. However,
+  the announced-but-not-started migration suggests possible resource constraints
+  or prioritization conflicts.
+
+═════════════════════════════════════════════════════════════════════════════════

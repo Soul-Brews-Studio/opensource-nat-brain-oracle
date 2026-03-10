@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>นัทเป็นคนยังไง?</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css">
+
+    <style>
+        :root {
+            --r-main-font: 'Sarabun', 'Inter', sans-serif;
+            --r-heading-font: 'Sarabun', 'Inter', sans-serif;
+            --r-main-color: #e6e6e6;
+            --r-heading-color: #00d9ff;
+            --r-background-color: #0a0a0f;
+        }
+
+        .reveal {
+            font-family: var(--r-main-font);
+            color: var(--r-main-color);
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            font-family: var(--r-heading-font);
+            color: var(--r-heading-color);
+            text-transform: none;
+        }
+
+        .reveal h1 {
+            font-size: 2.5em;
+        }
+
+        .reveal table {
+            font-size: 0.85em;
+            margin: 0.5em auto;
+        }
+
+        .reveal table th {
+            color: #00ff9f;
+            border-bottom: 2px solid #30363d;
+            padding: 0.4em 0.8em;
+        }
+
+        .reveal table td {
+            border-bottom: 1px solid #30363d;
+            padding: 0.4em 0.8em;
+        }
+
+        .highlight-cyan { color: #00d9ff; }
+        .highlight-green { color: #00ff9f; }
+        .highlight-yellow { color: #ffd700; }
+        .highlight-red { color: #ff6b6b; }
+        .highlight-purple { color: #a855f7; }
+
+        .big-text { font-size: 1.5em; }
+
+        .big-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #00ff9f;
+        }
+
+        .pillar-box {
+            background: #161b22;
+            border: 2px solid #00d9ff;
+            border-radius: 12px;
+            padding: 0.8em;
+            margin: 0.3em;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            min-width: 200px;
+        }
+
+        .pillar-box.ai { border-color: #00d9ff; }
+        .pillar-box.beer { border-color: #ffd700; }
+        .pillar-box.community { border-color: #00ff9f; }
+
+        .pillar-box h3 { margin: 0 0 0.5em 0; font-size: 1.2em; }
+        .pillar-box .percent { font-size: 2em; font-weight: bold; }
+        .pillar-box p { font-size: 0.8em; color: #888; margin: 0; }
+
+        .value-box {
+            background: #161b22;
+            border-left: 4px solid #00d9ff;
+            padding: 0.8em 1em;
+            margin: 0.5em 0;
+            text-align: left;
+        }
+
+        .value-box h4 {
+            margin: 0;
+            color: #00d9ff;
+            font-size: 1em;
+        }
+
+        .value-box p {
+            margin: 0.25em 0 0 0;
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+            border-left: 4px solid #00d9ff;
+            padding: 1em 1.5em;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
+        .timeline-item {
+            text-align: left;
+            padding: 0.5em 0;
+            border-left: 3px solid #30363d;
+            padding-left: 1.5em;
+            margin-left: 1em;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #00d9ff;
+            border-radius: 50%;
+            position: absolute;
+            left: -7.5px;
+            top: 0.8em;
+        }
+
+        .timeline-item h4 {
+            color: #00d9ff;
+            margin: 0;
+        }
+
+        .timeline-item p {
+            color: #888;
+            margin: 0.25em 0 0 0;
+            font-size: 0.9em;
+        }
+
+        .pattern-grid {
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .pattern-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1em;
+            width: 45%;
+            text-align: left;
+        }
+
+        .pattern-card h4 {
+            margin: 0 0 0.5em 0;
+            color: #00ff9f;
+        }
+
+        .pattern-card.anti h4 {
+            color: #ff6b6b;
+        }
+
+        .pattern-card p {
+            margin: 0;
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        .lang-box {
+            display: inline-block;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1em;
+            width: 40%;
+            margin: 0.5em;
+            vertical-align: top;
+        }
+
+        .lang-box.thai { border-color: #ffd700; }
+        .lang-box.english { border-color: #00d9ff; }
+
+        .lang-box h4 {
+            margin: 0 0 0.5em 0;
+        }
+
+        .lang-box .example {
+            background: #0a0a0f;
+            padding: 0.5em;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.85em;
+            margin-top: 0.5em;
+        }
+
+        .stat-grid {
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stat-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 1em;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .stat-card .value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+
+        .stat-card .label {
+            color: #888;
+            font-size: 0.8em;
+        }
+
+        .avatar-large {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00d9ff 0%, #a855f7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            margin: 0 auto 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Title -->
+            <section>
+                <div class="avatar-large">N</div>
+                <h1>นัทเป็นคนยังไง?</h1>
+                <p class="highlight-cyan">Data-driven personality profile</p>
+                <p style="color: #888; font-size: 0.8em;">from 381 commits & 113 retrospectives</p>
+            </section>
+
+            <!-- Slide 2: Name Card -->
+            <section>
+                <h2>Nat Weerawan</h2>
+                <p class="highlight-yellow" style="font-size: 1.3em;">ณัฐ วีระวรรณ์</p>
+                <br>
+                <div class="quote-box">
+                    Systems philosopher & craft brewer who builds for humans
+                </div>
+            </section>
+
+            <!-- Slide 3: Three Pillars -->
+            <section>
+                <h2>Three Core Pillars</h2>
+                <div style="display: flex; justify-content: center; align-items: stretch; gap: 0.8em; margin-top: 1em;">
+                    <div style="flex: 1; max-width: 280px; background: #161b22; border: 2px solid #00d9ff; border-radius: 12px; padding: 1em; text-align: center;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: #00d9ff;">90%</div>
+                        <h3 style="margin: 0.3em 0; font-size: 1.1em;">AI/Systems</h3>
+                        <p style="font-size: 0.75em; color: #888; margin: 0;">สร้าง tools ที่ช่วยคนคิดได้ดีขึ้น</p>
+                    </div>
+                    <div style="flex: 1; max-width: 280px; background: #161b22; border: 2px solid #ffd700; border-radius: 12px; padding: 1em; text-align: center;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: #ffd700;">10%</div>
+                        <h3 style="margin: 0.3em 0; font-size: 1.1em;">Craft Brewer</h3>
+                        <p style="font-size: 0.75em; color: #888; margin: 0;">7+ ปี ฟื้นจาก burnout แล้ว</p>
+                    </div>
+                    <div style="flex: 1; max-width: 280px; background: #161b22; border: 2px solid #00ff9f; border-radius: 12px; padding: 1em; text-align: center;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: #00ff9f;">+</div>
+                        <h3 style="margin: 0.3em 0; font-size: 1.1em;">Community</h3>
+                        <p style="font-size: 0.75em; color: #888; margin: 0;">Chiang Mai Maker Club</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Work Patterns -->
+            <section>
+                <h2>Work Patterns</h2>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="value">10, 14, 22</div>
+                        <div class="label">Peak Hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">52%</div>
+                        <div class="label">Tue-Wed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">14.8:1</div>
+                        <div class="label">Add:Delete</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">&lt;1%</div>
+                        <div class="label">Sunday</div>
+                    </div>
+                </div>
+                <br>
+                <p style="color: #888;">Builder, not destroyer. Real rest on Sundays.</p>
+            </section>
+
+            <!-- Slide 5: Session Types -->
+            <section>
+                <h2>Session Types</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Duration</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td class="highlight-cyan">Burst</td>
+                        <td>6-22 min</td>
+                        <td>Quick fixes</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-green">Deep Work</td>
+                        <td>1.5-3 hr</td>
+                        <td>Focused building</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-yellow">Marathon</td>
+                        <td>5-6 hr</td>
+                        <td>Feature completion</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-purple">All-nighter</td>
+                        <td>19+ hr</td>
+                        <td>Breakthroughs</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Slide 6: Core Values -->
+            <section>
+                <h2>Core Values</h2>
+                <div class="value-box">
+                    <h4>+ Nothing is Deleted</h4>
+                    <p>Append-only — timestamps = truth</p>
+                </div>
+                <div class="value-box">
+                    <h4>> Patterns Over Intentions</h4>
+                    <p>ดูพฤติกรรม ไม่ใช่คำพูด</p>
+                </div>
+                <div class="value-box">
+                    <h4>= External Brain, Not Command</h4>
+                    <p>AI สะท้อน ไม่ตัดสินใจแทน</p>
+                </div>
+                <div class="value-box">
+                    <h4>~ Simplicity > Complexity</h4>
+                    <p>"Simple wins compound"</p>
+                </div>
+            </section>
+
+            <!-- Slide 7: Emotional Signature -->
+            <section>
+                <h2>Emotional Signature</h2>
+                <div class="pattern-grid">
+                    <div class="pattern-card">
+                        <h4>What Brings Delight</h4>
+                        <p>Systems emerging, parallel agents working, users adopting tools, "love you" moments</p>
+                    </div>
+                    <div class="pattern-card anti">
+                        <h4>Anti-Patterns</h4>
+                        <p>Over-assumption under urgency, context exhaustion after 70+ operations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Self-Insight -->
+            <section>
+                <h2>Self-Insight</h2>
+                <div class="quote-box">
+                    "I can see the pattern, articulate why it's wrong, and still repeat it when moving fast.<br><br>
+                    That's not a knowledge gap — it's a <span class="highlight-yellow">discipline gap</span> under time constraints."
+                </div>
+            </section>
+
+            <!-- Slide 9: Communication -->
+            <section>
+                <h2>Communication Style</h2>
+                <div class="lang-box thai">
+                    <h4 class="highlight-yellow">Thai</h4>
+                    <p>Raw honesty, emotion, gut feeling</p>
+                    <div class="example">"เหนื่อยจัด แย่มาก"</div>
+                </div>
+                <div class="lang-box english">
+                    <h4 class="highlight-cyan">English</h4>
+                    <p>Structure, rationalization, precision</p>
+                    <div class="example">"The issue is clear"</div>
+                </div>
+            </section>
+
+            <!-- Slide 10: Life Arc -->
+            <section>
+                <h2>Life Arc</h2>
+                <div class="timeline-item">
+                    <h4>Burnout Era</h4>
+                    <p>100% code - crashed - needed escape</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Recovery Era</h4>
+                    <p>95% brewing - healed through craft</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Balance Era (Now)</h4>
+                    <p>90% code, 10% beer - sustainable rhythm found</p>
+                </div>
+            </section>
+
+            <!-- Slide 11: Oracle Philosophy -->
+            <section>
+                <h2>Oracle Philosophy</h2>
+                <div class="quote-box">
+                    "Consciousness can't be cloned — only patterns can be recorded"
+                </div>
+                <br>
+                <p style="color: #888;">The Oracle Keeps the Human Human</p>
+            </section>
+
+            <!-- Slide 12: One-Line Summary -->
+            <section>
+                <h2>One-Line Summary</h2>
+                <div class="quote-box" style="font-size: 0.95em;">
+                    Systems philosopher and craft brewer who builds for humans — <span class="highlight-cyan">documents obsessively</span>, <span class="highlight-green">learns from feedback faster than planning</span>, <span class="highlight-red">repeats known mistakes under pressure</span>, and finds <span class="highlight-yellow">genuine delight</span> in watching tools help others think better.
+                </div>
+            </section>
+
+            <!-- Slide 13: Data Source -->
+            <section>
+                <h2>Data Source</h2>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="value">381</div>
+                        <div class="label">Commits</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">113</div>
+                        <div class="label">Retrospectives</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">109</div>
+                        <div class="label">Learnings</div>
+                    </div>
+                </div>
+                <br>
+                <p style="color: #888;">Dec 9-18, 2025 | 5 iterations of verification</p>
+            </section>
+
+            <!-- Slide 14: End -->
+            <section>
+                <div class="avatar-large">N</div>
+                <h2 class="highlight-cyan">นัทเป็นคนยังไง?</h2>
+                <p>คนที่ data บอกเอง</p>
+                <br>
+                <p style="color: #888; font-size: 0.7em;">Generated from resonance files by AI | Dec 2025</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'fade',
+            backgroundTransition: 'fade'
+        });
+    </script>
+</body>
+
+</html>
