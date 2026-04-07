@@ -37,9 +37,32 @@
 
 ---
 
+## Round 3 — 2026-03-11
+
+| Deleted | Distilled To | Summary |
+|---------|-------------|---------|
+| `ψ-backup/archive/` (14 files — context/2025-12/ identity compilation, psi audit, weyermann, CCC, seeds, search results) | `ψ-backup/archive-context-later-distilled.md` | Identity extraction from 2200+ repos, psi structure audit, weyermann brewing ref, CCC analysis |
+| `ψ-backup/later/` (4 files — INDEX, task queue, outbox restructure, repo consolidation) | merged into above | 3 backlog tasks: GitHub deep dive, outbox restructure (3 options), repo consolidation (2200→300 repos) |
+| `ψ-backup/handoffs/` (1 file — empty CLAUDE.md) | merged into above | Empty placeholder |
+| `ψ-backup/memory/seeds/` (1 file — SEEDS.md) | merged into above | 30+ seeds: Cellar brain, Oracle monitoring, Agent SDK labs, Knowledge Graph, Parallel agents |
+| `ψ-backup/data/` (1 file — empty CLAUDE.md) | merged into above | Empty placeholder |
+| `ψ-backup/.obsidian/` (16 files — plugins, themes, config JSON) | deleted (config, not content) | Obsidian vault config: Minimal theme, calendar+style-settings plugins, workspace layout |
+| `ψ-backup/HOME.md` + `WIP-CRITIC.md` + `CLAUDE.md` + `later.md` | merged into above | Brain navigation map, /recap design critique (10 flaws), empty placeholders |
+| `ψ-backup/memory/` non-distilled (11 files — governance, constitution, skills inventory, themes, team manifest) | merged into above | Governance analysis (23 files across repos), skills inventory, 27 themes synthesis |
+| `scripts/` root (17 files — 8 .sh, 2 .scpt, 1 .py, 3 symlinks, 1 CLAUDE.md, 1 .toml) | `scripts/scripts-distilled.md` | Antigravity image pipeline, project-create/incubate, team-log, maw-peek, organize_prompts.py |
+| `nat-data-personal/` (1 file — empty CLAUDE.md) | `misc-distilled.md` | Empty knowledge plugin skeleton |
+| `Nat-s-Agents/` (1 file — empty CLAUDE.md) | merged into above | Empty resonance mirror |
+| `2026-03-03/` (empty dir) | merged into above | Empty directory |
+| Root .md files (8 files — CLAUDE_lessons/safety/subagents/templates/workflows, 2 architecture docs, learning index) | merged into above | Modular CLAUDE docs for Nat-s-Agents Oracle system, Oracle Starter Kit architecture |
+
+**Round 3 totals**: ~76 files + 16 .obsidian files deleted, 3 empty dirs removed → 3 files created
+
+---
+
 ## Cumulative Progress
 
 | Round | Files Deleted | Files Created | Running Total Remaining |
 |-------|--------------|---------------|------------------------|
 | 1     | ~286         | 7             | 1,101                  |
 | 2     | ~662         | 8             | ~439                   |
+| 3     | ~92          | 3             | ~350                   |
